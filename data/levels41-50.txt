@@ -957,7 +957,7 @@ mission "Apoxys Level 49"
 	on offer
 		require "Apoxys Core"
 		outfit "Superior Basal Level" 1
-		log "Levels (5)" "Level 49" "Reached level 19!"
+		log "Levels (5)" "Level 49" "Reached level 49!"
 		conversation
 			`"I'd say we're looking pretty nice by now, captain," Maribelle supposes as you come in for landing, "But there's always room for improvement, right?" She supposes.`
 			`You nod a bit, considering what should be improved next.`
