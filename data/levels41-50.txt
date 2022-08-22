@@ -580,86 +580,85 @@ mission "Apoxys Level 45"
 			apply
 				outfit "Superior Level Shields" 1
 				log "Levels (5)" "Level 45" "Chose shield upgrade."
-			`"I found some interesting damage counter designs; armor that rapidly cools itself in response to being burned, and a generator that produces energy from an ionic charge. Perhaps you'd want to try one of them out?" She asks.`
+			`"I found some highly experimental shield and armor designs; they're not particularly exotic, but they should reduce damage by an impressive amount; at least a third," She explains, "So, choose wisely! It'll make a big difference."`
 			choice
-				`	"We should negate all possible heat from external sources."`
+				`	"We should prioritize powerful shields."`
 					goto shengines
-				`	"We should be able to generate power even in the most adverse conditions."`
+				`	"It can't hurt to have a strong hull to fall back on."`
 					goto boringen
 			label hullcap
 			apply
 				outfit "Superior Level Hull" 1
 				log "Levels (5)" "Level 45" "Chose hull upgrade."
-			`"I found some interesting damage counter designs; armor that rapidly cools itself in response to being burned, and a generator that produces energy from an ionic charge. Perhaps you'd want to try one of them out?" She asks.`
+			`"I found some highly experimental shield and armor designs; they're not particularly exotic, but they should reduce damage by an impressive amount; at least a third," She explains, "So, choose wisely! It'll make a big difference."`
 			choice
-				`	"We should negate all possible heat from external sources."`
+				`	"We should prioritize powerful shields."`
 					goto shengines
-				`	"We should be able to generate power even in the most adverse conditions."`
+				`	"It can't hurt to have a strong hull to fall back on."`
 					goto boringen
 			label outfitcap
 			apply
 				outfit "Superior Level Outfit" 1
 				log "Levels (5)" "Level 45" "Chose outfit upgrade."
-			`"I found some interesting damage counter designs; armor that rapidly cools itself in response to being burned, and a generator that produces energy from an ionic charge. Perhaps you'd want to try one of them out?" She asks.`
+			`"I found some highly experimental shield and armor designs; they're not particularly exotic, but they should reduce damage by an impressive amount; at least a third," She explains, "So, choose wisely! It'll make a big difference."`
 			choice
-				`	"We should negate all possible heat from external sources."`
+				`	"We should prioritize powerful shields."`
 					goto shengines
-				`	"We should be able to generate power even in the most adverse conditions."`
+				`	"It can't hurt to have a strong hull to fall back on."`
 					goto boringen
 			label cargocap
 			apply
 				outfit "Superior Level Cargo" 1
 				log "Levels (5)" "Level 45" "Chose cargo upgrade."
-			`"I found some interesting damage counter designs; armor that rapidly cools itself in response to being burned, and a generator that produces energy from an ionic charge. Perhaps you'd want to try one of them out?" She asks.`
+			`"I found some highly experimental shield and armor designs; they're not particularly exotic, but they should reduce damage by an impressive amount; at least a third," She explains, "So, choose wisely! It'll make a big difference."`
 			choice
-				`	"We should negate all possible heat from external sources."`
+				`	"We should prioritize powerful shields."`
 					goto shengines
-				`	"We should be able to generate power even in the most adverse conditions."`
+				`	"It can't hurt to have a strong hull to fall back on."`
 					goto boringen
 			label weaponcap
 			apply
 				outfit "Superior Level Weapons" 1
 				log "Levels (5)" "Level 45" "Chose weapon upgrade."
-			`"I found some interesting damage counter designs; armor that rapidly cools itself in response to being burned, and a generator that produces energy from an ionic charge. Perhaps you'd want to try one of them out?" She asks.`
+			`"I found some highly experimental shield and armor designs; they're not particularly exotic, but they should reduce damage by an impressive amount; at least a third," She explains, "So, choose wisely! It'll make a big difference."`
 			choice
-				`	"We should negate all possible heat from external sources."`
+				`	"We should prioritize powerful shields."`
 					goto shengines
-				`	"We should be able to generate power even in the most adverse conditions."`
+				`	"It can't hurt to have a strong hull to fall back on."`
 					goto boringen
 			label enginecap
 			apply
 				outfit "Superior Level Engines" 1
 				log "Levels (5)" "Level 45" "Chose engine upgrade."
-			`"I found some interesting damage counter designs; armor that rapidly cools itself in response to being burned, and a generator that produces energy from an ionic charge. Perhaps you'd want to try one of them out?" She asks.`
+			`"I found some highly experimental shield and armor designs; they're not particularly exotic, but they should reduce damage by an impressive amount; at least a third," She explains, "So, choose wisely! It'll make a big difference."`
 			choice
-				`	"We should negate all possible heat from external sources."`
+				`	"We should prioritize powerful shields."`
 					goto shengines
-				`	"We should be able to generate power even in the most adverse conditions."`
+				`	"It can't hurt to have a strong hull to fall back on."`
 					goto boringen
 			label bunkcap
 			apply
 				outfit "Superior Level Bunks" 1
 				log "Levels (5)" "Level 45" "Chose bunks upgrade."
-			`"I found some interesting damage counter designs; armor that rapidly cools itself in response to being burned, and a generator that produces energy from an ionic charge. Perhaps you'd want to try one of them out?" She asks.`
+			`"I found some highly experimental shield and armor designs; they're not particularly exotic, but they should reduce damage by an impressive amount; at least a third," She explains, "So, choose wisely! It'll make a big difference."`
 			choice
-				`	"We should negate all possible heat from external sources."`
+				`	"We should prioritize powerful shields."`
 					goto shengines
-				`	"We should be able to generate power even in the most adverse conditions."`
+				`	"It can't hurt to have a strong hull to fall back on."`
 					goto boringen
 				
 			label shengines
 			apply
 				outfit "Level 45 Shield Reinforcment" 1
-				log "Levels (5)" "Level 45" "Decided on the endothermic armor perk."
+				log "Levels (5)" "Level 45" "Decided on the super shields perk."
 			`"If anything gets through our shields after this, I'll be impressed," Maribelle expresses with a smile.`
 				decline
 			label boringen
 			apply
 				outfit "Level 39 Hull Reinforcement" 1
-				log "Levels (5)" "Level 45" "Decided on the ionic generator perk."
+				log "Levels (5)" "Level 45" "Decided on the ultra armor perk."
 			`"Okay!" Maribelle says, "We'll have the hardest hull in the universe!" Maribelle expresses gleefully.`
-				decline
-			
+				decline	
 	
 	on decline
 		set "apoxys lv.45"
