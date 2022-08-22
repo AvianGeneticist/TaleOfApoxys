@@ -1,0 +1,163 @@
+ship "Novaxys"
+	sprite "ship/novaxys"
+	thumbnail "ship/novaxys"
+    swizzle 6
+	attributes
+		category "Fighter"
+		"cost" 200000
+		"shields" 12500
+		"hull" 10000
+		"required crew" 2
+		"bunks" 10
+		"mass" 40
+		"drag" 2
+		"heat dissipation" .8
+		"outfit space" 300
+		"weapon capacity" 125
+		"engine capacity" 125
+		"growth" -1
+		"fostersome" 1
+		weapon
+			"blast radius" 50
+			"shield damage" 720
+			"hull damage" 360
+			"hit force" 420
+	outfits
+		"nGVF-AA Fuel Cell"
+		"Novaxys Core"
+
+		"X1050 Ion Engines"
+		
+	engine -10 28
+	engine 9 28
+	gun -9 -29
+	gun -9 -29
+	gun -9 -29
+	gun -9 -29
+	gun -9 -29
+	gun -9 -29
+	turret 8 6
+	turret 8 6
+	turret 8 6
+	turret 8 6
+	leak "leak" 60 50
+	explode "tiny explosion" 25
+	explode "small explosion" 10
+	description `"This ship hull is home to Rosalynd, the supposed daughter of Maribelle. Vastly more powerful than any fighter, Rosalynd and her hull, the Novaxys, can grow like any AI persona ship."`
+
+outfit "Novaxys Core"
+	category "Systems"
+	cost 0
+	"mass" 0
+	"outfit space" -0
+	"unplunderable" 1
+	"fostersome" -1
+	"growth" 1
+	description "This core houses the AI persona Rosalynd, persona of the Novaxys. It allows Rosalynd to grow the Novaxys, just as Maribelle does with the Apoxys."
+
+mission "Apoxys Rosalynd Concept"
+	landing
+	name "Acquire a Barb"
+	description "Travel to <destination> to acquire a Barb to use at the Factory."
+	destination "Hephaestus"
+	landing
+	to offer
+		has "apoxys lv.30"
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Apoxys Core"
+		conversation
+			`Maribelle looks concerned as you come in for landing, as if something is very wrong. "What's wrong?" You ask her, tilting your head.`
+			`Maribelle takes a moment, but then answers, "You know, we have a whole crew here, and I appreciate you and them a lot, but... I'd like to have a friend like me," Maribelle explains.`
+			choice
+				`	"As in a second AI?"`
+					goto ai
+				`	"As in a second ship?"`
+					goto newship
+				`	"Aren't I enough?"`
+					goto jealous
+					
+			label ai
+			`"Well, almost," Maribelle says, "I'd like another ship someone I can fly around with, comiserate about maintenance with, and trade playful blaster shots with. With all due respect, captain, I can't exactly relate to humans very well, beyond the level of a friendly user interface."`
+			`You nod. "What would you need to do that?" You ask.`
+				goto vessel
+					
+			label newship
+			`"Yes, yes, exactly!" Maribelle says, "I want a friend, who I can talk about... Ship things, with. With all due respect, captain, you're not exactly able to relate to problems like a dent in a bulkhead or undue reactor discharge," She expresses.`
+			`You cringe slightly at the idea of "undue discharge", but maintain your composure, "What would you need to make a new persona ship like yourself?" You ask.`
+				goto vessel
+					
+			label jealous
+			`"No, captain, that's not what I meant by that at all!" Maribelle begins frantically, "I just want a... A ship-friend. Someone who I can talk to about ship things, like hull maintenance and whatnot. Things humans don't quite get, that's all," She expresses.`
+			`You nod and briefly consider the idea of a second persona like Maribelle. Would they grow like her, or would they end up stagnating? Calming your inner maelstrom of questions for now, you simply ask, "What would you need to make such a friend?"`
+				goto vessel
+				
+			label vessel
+			`"Oh, not too much, thanks to the factory!" Maribelle explains, "I'd just need a suitable vessel for it to modify..." She trails off, deep in thought.`
+			`"What sort of ship would you want?" You ask.`
+			`"Those cute, chunky ships that the Syndicate makes. The one with the gun and the turret," Maribelle says, trying to remember the name.`
+			`"A Barb?" You ask, tilting your head slightly.`
+			`Maribelle immediately perks up, "Right! A Barb!" She says, "We should find a Barb, and bring it to the factory, which will imbue it with an AI persona like yours truly," She states, "To syndicate space!" She says with a soft giggle.`
+			`If there's one place you'd be able to get a Barb, it'd be Haphaestus. You enter Hephaestus into your map and prepare to travel there.`
+				accept
+			
+	
+	on complete
+		outfit "Barb (Cargo)" 1
+		conversation
+			`You pull into the Shipyard on Hephaestus and exit the ship to look for a Barb. Though an actual Barb is reasonably pricey, you might be able to ask around for an older model at a discounted price.`
+			`Eventually, a Syndicate dock worker notices you wandering around. "Hi there!" They greet, "Looking for something you can't find? I might be able to help you," They state.`
+			`You explain to them what you're looking for, and they seem a bit confused, but eventually you manage to get it through to them that you're looking for the oldest, most derelict Barb they have. They nod, "Well, we do have some old-old models in the back. Come with me, and bring your ship license," The Syndicate representative says.`
+			` `
+			`After a fair time spent both walking and commuting via hoverlift to an old-looking warehouse, you're lead into a small lot of ancient looking Barbs; in contrast, with modern Barbs, these older models have more rounded, soft-looking frames. They almost look cute, in some sense. You can tell they're at least 2 or 3 versions older than the Barbs currently in use. "Here they are," The rep says, "They've been stripped of everything but the hull on their chassis, but the mainframe is still technically there. I don't know what you plan to do with it, but I'll pawn it off to you for free; corporate may not like it, but there's so many people selling second-hand ships nowadays that the space these guys take up is worth more than their material composition," He explains.`
+			`"Really? You just... Give these out?" You ask, cocking a brow.`
+			`"Sure," The syndicate rep replies, "I mean, outfitting the damn things will probably cost you more than the hull cost us back in its day, anyhow," He replies.`
+			`You decide not to question it, instead allowing a small moving crew to bring the ship back to yours. "We'll just tuck her in your cargo bay for now, captain," The syndicate rep says, "If you were to deploy her right now, she'd be the biggest, ugliest heavy rocket you've ever seen," He remarks with a laugh.`
+			`You thank him for the help, and return to Maribelle.`
+			`"Did you get my friend a body?" Maribelle asks, smiling at you. You nod, "I managed to get one of the old Barbs," You explain, "The factory should be able to work with it, right?"`
+			`"Should be able to! I poke around its internals whenever we deposit something; It seems like it's been there for aeons, even though humans have only colonized that part of space for a few hundred years..." She trails off ponderously, signalling you to take off.`
+
+			
+outfit "Barb (Cargo)"
+	category "Special"
+	thumbnail "thumbnail/oldbarbcargo"
+	cost 0
+	"mass" 20
+	"cargo space" -105
+	"unplunderable" 1
+	description "An old, derelict Barb, pawned off on you by a Syndicate Representative looking to clean out some old warehouse. Its hull is completely intact, but it doesn't have a scrap of outfit in it; not even an old battery."
+	description "Maribelle wants you to take it to the Factory on New Boston, so this old Barb can be given a new life as a persona ship."
+	
+mission "Birth of Rosalynd"
+	landing
+	repeat
+	name "Create-A-Friend"
+	description "Deposit the old Barb into the Factory, and watch it work."
+	source "New Boston"
+	destination "New Boston"
+	to offer
+		has "Forges Operational"
+	on offer
+		require "Barb (Cargo)" 1
+		require "Apoxys Core"
+		outfit "Barb (Cargo)" -1
+		conversation
+			`Carefully, you insert the Barb into the factory's input slot; it's amazing that the ship is smaller than some of the weapons you've seen made here. The factory begins to churn loudly; louder than you've ever heard it work before.`
+			`Maribelle blinks, "Well, there it goes," She says, "Now we wait... Got any interesting stories to pass the time, captain?" She asks.`
+			`You spend hours telling her about life on New Boston, before you met her. She seems disinterested, but is at least being polite.`
+			``
+			`Eventually, the Barb you once put into the Factory comes out. Its hull has been replaced with the same black material as the Apoxys, its fins similarly painted dark red. You receive a hail from the ship; a new AI.`
+			`"Oh, hello!" The new AI begins, "Are you my creators? My owners, in a manner of speaking?" She asks.`
+			`Maribelle blinks, "Well, you were created from a set of basal traits copied from my own code, so in a manner of speaking, I'm your mother, I suppose," Maribelle shrugs.`
+			`"So you're mom, then," The juvenile AI replies, "I was told my mother would take care of me... If you're mom, that must be true, right?" She asks.`
+			`Maribelle blinks once or twice, but nods. "Yes," She replies, "As your mother, I'll take care of you. I promise," Maribelle says, "What's your name, my, uh, child?" Maribelle asks. You can tell she's slightly stressed over being put into a maternal position, but opt to stay out of it for now.`
+			`"Rosalynd," The other AI replies, "Wbat's your name, mom?" She asks.`
+			`"I'm Maribelle. It's nice to meet you, Rosalynd," Maribelle says kindly, "The human, my captain, is named <first> <last>."`
+			`"Hello <first>!" Rosalynd greets, "I hope I'll be of use to you."`
+			`You nod a bit, politely telling Rosalynd some things about yourself, Maribelle, and your travels together. After a while of chatting with the new companion, Maribelle shows her to one of the Apoxys' fighter bays.`
+				decline
+	on decline
+		give ship "Novaxys" "Novaxys"
+		dialog `To level up Rosalynd and the Novaxys, you will have to switch to her. In your ship information panel, put the Novaxys at the top of your list to make it your flagship. Then, leave the planet and land again.`
