@@ -299,6 +299,28 @@ mission "Crafting Multi-Disruptor"
 		outfit "Multi-Disruptor" 1
 		dialog `The factory has toiled meticulously, and its toiling has born fruit: A Multi-Disruptor is now yours.`
 		
+mission "Crafting Static Cling"
+	job
+	repeat
+	name "Craft a Static Cling"
+	description "Use a Korath Detainer and a Ka'het Nullifier to craft a Static Cling."
+	source "New Boston"
+	destination "New Boston"
+	to offer
+		has "Forges Operational"
+	on offer
+		require "Korath Detainer" 1
+		require "Ka'het Nullifier" 1
+		require "Apoxys Core"
+	on accept
+		outfit "Korath Detainer" -1
+		outfit "Ka'het Nullifier" -1
+		clear "Forges Operational"
+	on complete
+		set "Forges Operational"
+		outfit "Static Cling" 1
+		dialog `The factory has toiled meticulously, and its toiling has born fruit: A Static Cling is now yours.`
+		
 mission "Crafting Rampager Battery"
 	job
 	repeat
