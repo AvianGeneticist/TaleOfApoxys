@@ -230,7 +230,7 @@ outfit "Lightning Strike Magazine"
 	cost 72000
 	thumbnail "outfit/emp rack"
 	"mass" 0.8
-	"outfit space" 8
+	"outfit space" -8
 	"lightning striker capacity" 9
 	ammo "Lightning Striker"
 	description "This tiny magazine doesn't store as many lightning strikers as a typical missile storage bay, but it's extremely compact and lightweight."

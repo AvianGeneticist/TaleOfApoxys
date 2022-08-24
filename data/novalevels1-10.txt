@@ -1,13 +1,13 @@
 outfit "Low Nova Level"
 	category "Level-Ups"
 	cost 0
-	"mass" 2
-	"outfit space" 30
-	"weapon capacity" 15
-	"engine capacity" 6
+	"mass" 3
+	"outfit space" 40
+	"weapon capacity" 25
+	"engine capacity" 8
 	"unplunderable" 1
-	"hull" 500
-	"shields" 625
+	"hull" 625
+	"shields" 750
 	"operating costs" 25
 	description "Upgrade all the friends!"
 	description "YOU SHOULD NEVER SEE THIS."
@@ -18,8 +18,8 @@ outfit "Low Nova Health"
 	"mass" 0
 	"outfit space" 0
 	"unplunderable" 1
-	"shields" 3125
-	"hull" 2500
+	"shields" 3750
+	"hull" 3125
 	description "Improves the Novaxys' durability."
 	description "YOU SHOULD NEVER SEE THIS."
 
@@ -27,8 +27,8 @@ outfit "Low Nova Support"
 	category "Level-Ups"
 	cost 0
 	"mass" 0
-	"outfit space" 75
-	"heat capacity" 10
+	"outfit space" 105
+	"heat capacity" 15
 	"unplunderable" 1
 	description "Increases the Novaxys' outfit space and heat capacity."
 	description "YOU SHOULD NEVER SEE THIS."
@@ -38,8 +38,8 @@ outfit "Low Nova Combat"
 	cost 0
 	"mass" 0
 	"outfit space" 0
-	"weapon capacity" 35
-	"engine capacity" 10
+	"weapon capacity" 50
+	"engine capacity" 12
 	"unplunderable" 1
 	description "Increases the Novaxys' weapon and engine space."
 	description "YOU SHOULD NEVER SEE THIS."
@@ -48,12 +48,12 @@ outfit "N10 Milestone"
 	category "Level-Ups"
 	cost 0
 	"mass" 4
-	"outfit space" 105
-	"weapon capacity" 50
-	"engine capacity" 16
+	"outfit space" 145
+	"weapon capacity" 75
+	"engine capacity" 20
 	"unplunderable" 1
-	"hull" 3000
-	"shields" 3750
+	"hull" 3750
+	"shields" 4500
 	"operating costs" 25
 	description "Upgrade all the friends!"
 	description "YOU SHOULD NEVER SEE THIS."
