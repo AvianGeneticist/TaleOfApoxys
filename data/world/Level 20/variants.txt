@@ -1,6 +1,7 @@
 shipyard "human plugins"
 	"Level 20 Leviathan"
 	"Level 20 Behemoth"
+	"Level 20 Protector"
 
 ship "Leviathan" "Level 20 Leviathan"
 	add attributes
@@ -83,3 +84,48 @@ ship "Behemoth" "Level 20 Behemoth"
 	turret 47.5 33.5
 	turret -22 66.5
 	turret 22 66.5 
+	
+ship "Protector" "Level 20 Protector"
+	add attributes
+		"cost" 6750000
+		"shields" 24000
+		"hull" 7200
+		"required crew" 14
+		"bunks" 31
+		"fuel capacity" 200
+		"cargo space" 95
+		"outfit space" 585
+		"weapon capacity" 330
+		"engine capacity" 50
+	outfits
+		"Proton Turret" 12
+		"Sanctuary Beam" 2
+		"Armageddon Core"
+		"Fusion Reactor"
+		"LP576a Battery Pack"
+		"S-970 Regenerator"
+		"S-270 Regenerator" 2
+		"Liquid Helium Cooler" 2
+		"Water Coolant System"
+		"Small Radar Jammer" 2
+		"A370 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Scram Drive"
+	engine -12 122.5
+	engine 12 122.5
+	gun -17.5 -101
+	gun 17.5 -101
+	turret 0 -28.5 "Sanctuary Beam"
+	turret -48.5 -48.5
+	turret -48.5 -48.5
+	turret 48.5 -48.5
+	turret 48.5 -48.5
+	turret -68.5 0
+	turret -68.5 0
+	turret 68.5 0
+	turret 68.5 0
+	turret -48.5 48.5
+	turret -48.5 48.5
+	turret 48.5 48.5
+	turret 48.5 48.5
+	turret 0 30 "Sanctuary Beam"

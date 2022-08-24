@@ -33,6 +33,27 @@ outfit "Dragonsbreath Battery"
 	description "The Dragonflame Cannon was already the largest, most powerful weapon humanity has ever seen. However, the forges located on New Boston seem to have been designed to power up any weapon, no matter the size. Incorporating Human and Korath tech into the design has resulted in an enormous, three-chambered design: A triple-chambered hand cannon, on a warship scale."
 	description "Even if it wanted to, the entire weapon would not be able to fit in your weapon system; some of it ends up breaching the line and landing squarely in typical outfit space."
 
+#2 Korath Warders + 1 Heavy Anti-Missile
+outfit "Sanctuary Beam"
+	category "Turrets"
+	cost 2005000
+	thumbnail "outfit/warder"
+	"mass" 76
+	"outfit space" -76
+	"weapon capacity" -76
+	"energy capacity" 75
+	"turret mounts" -1
+	weapon
+		"hardpoint sprite" "hardpoint/warder"
+		"hardpoint offset" 3.
+		"hit effect" "korath warder"
+		"anti-missile" 10
+		"velocity" 350
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 20
+		"firing heat" 14
+	description "This highly-advanced missile defense turret was originally made by the Syndicate by mixing Human and Korath technology. Though it is energy- and space-intensive for an anti-missile, it is capable of continuous fire, burning through even the toughest missiles."
 
 outfit "Starcutter Turret"
 	category "Turrets"

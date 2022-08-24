@@ -275,6 +275,28 @@ mission "Crafting Lightning Strike Deployers"
 		outfit "Lightning Strike Deployer" 1
 		dialog `The factory has toiled meticulously, and its toiling has born fruit: A Lightning Strike Deployer is now yours.`
 		
+mission "Crafting Sanctuary Beam"
+	job
+	repeat
+	name "Craft a Sanctuary Beam"
+	description "Use 2 Korath Warders and a Heavy Anti-Missile Turret to craft a Sanctuary Beam."
+	source "New Boston"
+	destination "New Boston"
+	to offer
+		has "Forges Operational"
+	on offer
+		require "Korath Warder" 2
+		require "Heavy Anti-Missile Turret" 1
+		require "Apoxys Core"
+	on accept
+		outfit "Korath Warder" -2
+		outfit "Heavy Anti-Missile Turret" -1
+		clear "Forges Operational"
+	on complete
+		set "Forges Operational"
+		outfit "Sanctuary Beam" 1
+		dialog `The factory has toiled meticulously, and its toiling has born fruit: A Sanctuary Beam is now yours.`
+		
 mission "Crafting Multi-Disruptor"
 	job
 	repeat

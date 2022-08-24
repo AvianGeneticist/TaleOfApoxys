@@ -40,3 +40,28 @@ event "Level 20 Fleet Deployment"
 			"Firebird (Laser)"
 		add variant 9
 			"Level 20 Leviathan"
+	fleet "Large Core Pirates"
+		add variant 4
+			"Protector"
+	fleet "Large Core Merchants"
+		add variant 15
+			"Freighter" 4
+			"Level 20 Protector" 1
+		add variant 8
+			"Container Transport" 2
+			"Level 20 Protector" 1
+		add variant 2
+			"Container Transport (Heavy)" 2
+			"Level 20 Protector" 1
+		add variant 2
+			"Container Transport (Proton)" 2
+			"Level 20 Protector" 1
+		add variant 2
+			"Bulk Freighter" 2
+			"Level 20 Protector" 1
+	fleet "Large Syndicate"
+		add variant 6
+			"Level 20 Protector"
+		add variant 3
+			"Level 20 Protector"
+			"Quicksilver (Proton)" 2
