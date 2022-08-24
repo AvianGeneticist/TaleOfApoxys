@@ -183,7 +183,6 @@ mission "Apoxys Level 11"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Modest Basal Level" 1
 		log "Levels (2)" "Level 11" "Reached level 11!"
 		conversation
 			`"You know, captain," Maribelle begins, "After that last big upgrade, I'd like to try putting more effort into my upgrades into the future. Hopefully you'll be able to notice some greater improvements around here!" She states.`
@@ -203,6 +202,8 @@ mission "Apoxys Level 11"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -248,6 +249,7 @@ mission "Apoxys Level 11"
 				decline
 	
 	on decline
+		outfit "Modest Basal Level" 1
 		set "apoxys lv.11"
 
 mission "Apoxys Level 12"
@@ -263,7 +265,6 @@ mission "Apoxys Level 12"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Modest Basal Level" 1
 		log "Levels (2)" "Level 12" "Reached level 12!"
 		conversation
 			`"Captain, in addition to your usual feedback, I'd like to ask you about some other things today," Maribelle states calmly, "Give your typical notes first; it's not horribly urgent."`
@@ -283,6 +284,8 @@ mission "Apoxys Level 12"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -384,6 +387,7 @@ mission "Apoxys Level 12"
 			
 	
 	on decline
+		outfit "Modest Basal Level" 1
 		set "apoxys lv.12"
 
 mission "Apoxys Level 13"
@@ -399,7 +403,6 @@ mission "Apoxys Level 13"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Modest Basal Level" 1
 		log "Levels (2)" "Level 13" "Reached level 13!"
 		conversation
 			`"Ready to figure out some more upgrades, captain?" Maribelle asks, "I think I've got one in me today."`
@@ -419,6 +422,8 @@ mission "Apoxys Level 13"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -464,6 +469,7 @@ mission "Apoxys Level 13"
 				decline
 	
 	on decline
+		outfit "Modest Basal Level" 1
 		set "apoxys lv.13"
 
 mission "Apoxys Level 14"
@@ -479,7 +485,6 @@ mission "Apoxys Level 14"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Modest Basal Level" 1
 		log "Levels (2)" "Level 14" "Reached level 14!"
 		conversation
 			`Maribelle looks at you contently as you come in for landing, "I think we're about due for another upgrade, captain. Mind helping me decide on a focus?" She asks.`
@@ -499,6 +504,8 @@ mission "Apoxys Level 14"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -544,6 +551,7 @@ mission "Apoxys Level 14"
 				decline
 	
 	on decline
+		outfit "Modest Basal Level" 1
 		set "apoxys lv.14"
 
 mission "Apoxys Level 15"
@@ -559,7 +567,6 @@ mission "Apoxys Level 15"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Modest Basal Level" 1
 		log "Levels (2)" "Level 15" "Reached level 15!"
 		conversation
 			`"I await your feedback eagerly, captain; I've been doing some research into methods of fuel creation for the ship, and I'd like to discuss them after your standard requests," Maribelle explains.`
@@ -579,6 +586,8 @@ mission "Apoxys Level 15"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -666,6 +675,7 @@ mission "Apoxys Level 15"
 			
 	
 	on decline
+		outfit "Modest Basal Level" 1
 		set "apoxys lv.15"
 
 mission "Apoxys Level 16"
@@ -681,7 +691,6 @@ mission "Apoxys Level 16"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Modest Basal Level" 1
 		log "Levels (2)" "Level 16" "Reached level 16!"
 		conversation
 			`Maribelle smiles at you, "I think we've really been moving up in the world, captain. The times I've known you have been some of the best times in my life," She explains, "Thinking back on it, you probably weren't my intended pilot..." She supposes.`
@@ -701,6 +710,8 @@ mission "Apoxys Level 16"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -746,6 +757,7 @@ mission "Apoxys Level 16"
 				decline
 	
 	on decline
+		outfit "Modest Basal Level" 1
 		set "apoxys lv.16"
 		
 mission "Apoxys Level 17"
@@ -761,7 +773,6 @@ mission "Apoxys Level 17"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Modest Basal Level" 1
 		log "Levels (2)" "Level 17" "Reached level 17!"
 		conversation
 			`It's been a lot of work getting this far, but it's been worth it for sure. You and Maribelle both have been putting your all into keeping the Apoxys on its path of improvement. You approach her, preparing your feedback.`
@@ -780,6 +791,8 @@ mission "Apoxys Level 17"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -825,6 +838,7 @@ mission "Apoxys Level 17"
 				decline
 	
 	on decline
+		outfit "Modest Basal Level" 1
 		set "apoxys lv.17"
 		
 mission "Apoxys Level 18"
@@ -840,7 +854,6 @@ mission "Apoxys Level 18"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Modest Basal Level" 1
 		log "Levels (2)" "Level 18" "Reached level 18!"
 		conversation
 			`Maribelle smiles at you, "Captain! I have ideas! Quick, give me feedback so I can tell you your special options for today!" She demands, voice clearly giddy. Better not keep her waiting.`
@@ -859,6 +872,8 @@ mission "Apoxys Level 18"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -946,6 +961,7 @@ mission "Apoxys Level 18"
 			
 	
 	on decline
+		outfit "Modest Basal Level" 1
 		set "apoxys lv.18"
 		
 mission "Apoxys Level 19"
@@ -961,7 +977,6 @@ mission "Apoxys Level 19"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Modest Basal Level" 1
 		log "Levels (2)" "Level 19" "Reached level 19!"
 		conversation
 			`"With our new power systems functioning as intended, I'm ready to look at our whole system with a brand new lease on life! Fire away, captain!" Maribelle declares.`
@@ -981,6 +996,8 @@ mission "Apoxys Level 19"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -1026,6 +1043,7 @@ mission "Apoxys Level 19"
 				decline
 	
 	on decline
+		outfit "Modest Basal Level" 1
 		set "apoxys lv.19"
 
 mission "Apoxys Level 20"
@@ -1041,7 +1059,6 @@ mission "Apoxys Level 20"
 	
 	on offer
 		require "Apoxys Core"
-		outfit "Level 20 Milestone" 1
 		log "Levels (2)" "Milestone Level 20" "Achieved the milestone of level 20!"
 		conversation
 			`You notice that Maribelle is oddly quiet again; thankfully, this time, you understand what that means. "Ready for another big surge of growth?" You question. Maribelle nods, "You know me too well, captain," She says with a soft laugh, "I'll be spending the day going through and optimizing every ship system I find. Leave your prefered system as a note for me, as usual!"`
@@ -1061,6 +1078,8 @@ mission "Apoxys Level 20"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
+				`	(Delay giving Maribelle instructions to upgrade for now.)`
+					defer
 					
 			label shieldcap
 			apply
@@ -1106,4 +1125,5 @@ mission "Apoxys Level 20"
 				decline
 	
 	on decline
+		outfit "Level 20 Milestone" 1
 		set "apoxys lv.20"
