@@ -179,7 +179,7 @@ outfit "Static Cling"
 		"slowing damage" 35
 		"blast radius" 75
 		"no damage scaling"
-	description "The Static Cling fires projectiles that explode into a broad energy field, causing reactor, shield, and engine discharge across all struck targets. Though its effects are significant, its most valuable trait is being able to hit many targets."
+	description "The Static Cling fires projectiles that explode into a broad energy field, causing reactor, shield, and engine discharge across all struck targets, as a combination of the Korath Detainer and the Ka'Het Nullifier. Though its effects are significant, its most valuable trait is being able to hit many targets."
 
 
 outfit "Rampager Battery"
@@ -213,7 +213,78 @@ outfit "Rampager Battery"
 		"shield damage" 38
 		"hull damage" 46
 		"hit force" 3
-	description "An odd mix between the weapons that comprise it, the Rampager Battery is comprised of a number of Thrasher Cannons that have been modified and imbued with the seeking effect of the Pug Seeker; so deepy imbued, in fact, that the original Pug Seeker is almost nowhere to be found."
+	description "An odd mix between the weapons that comprise it, the Rampager Battery is comprised of a number of Thrasher Cannons that have been modified and imbued with the seeking effect of the Pug Seeker; so deeply imbued, in fact, that the original Pug Seeker is almost nowhere to be found."
+
+outfit "Proton Undulator Cannon"
+	category "Guns"
+	cost 502500
+	thumbnail "outfit/ka'het annihilator"
+	"mass" 38
+	"outfit space" -42
+	"weapon capacity" -42
+	"gun ports" -1
+	weapon
+		sprite "projectile/annihilator"
+			"frame rate" 7
+		sound "inhibitor"
+		"hit effect" "bullet impact"
+		"submunition" "Undulator Propagate" 3
+		"inaccuracy" 0.8
+		"velocity" 23
+		"lifetime" 23
+		"reload" 8
+		"firing energy" 48
+		"firing heat" 72
+	description "A mix of the Proton Gun and the Ka'Het Ravager, this weapon produces long-ranged projectiles that break apart over long distance, reducing the likelihood that all the projectile's energy will land on target, but massively increasing the amount of area the weapon can control."
+
+outfit "Undulator Propagate"
+	weapon
+		sprite "projectile/annihilator"
+			"frame rate" 6
+		"hit effect" "proton impact"
+		"submunition" "Undulator Trail" 4
+		"random velocity" 2
+		"inaccuracy" 3
+		"lifetime" 23
+		
+outfit "Undulator Trail"
+	weapon
+		sprite "projectile/annihilator"
+			"frame rate" 5
+		"hit effect" "proton impact"
+		"random velocity" 2
+		"inaccuracy" 5
+		"random lifetime" 6
+		"lifetime" 23
+		"hit force" 1
+		"shield damage" 6.4
+		"hull damage" 3.6
+		
+outfit "Proton Undulator Turret"
+	category "Turrets"
+	cost 835000
+	thumbnail "outfit/ka'het annihilator turret"
+	"mass" 81
+	"outfit space" -88
+	"weapon capacity" -88
+	"turret mounts" -1
+	weapon
+		sprite "projectile/annihilator"
+			"frame rate" 7
+		sound "inhibitor"
+		"hit effect" "bullet impact"
+		"submunition" "Undulator Propagate" 3
+		"turret turn" 2.1
+		"inaccuracy" 1.2
+		"velocity" 23
+		"lifetime" 23
+		"reload" 4
+		"firing energy" 48
+		"firing heat" 72
+	description "This is a pair of Proton Undulator Cannons mounted on a turret. Their combined fire rate allows the turret to easily saturate an area with fire, serving wonderfully as a browning weapon."
+
+
+#Secondaries that use fuel
 
 #Secondaries that require ammo
 	

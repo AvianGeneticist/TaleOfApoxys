@@ -1,0 +1,42 @@
+mission "Level 20 Fleets"
+	landing
+	source
+		government "Republic" "Syndicate" "Free Worlds"
+	to offer
+		has "free worlds plot completed"
+		has "apoxys lv.20"
+	on offer
+		event "Level 20 Fleet Deployment"
+		conversation
+			`You're listening to the radio with Maribelle when all of a sudden, a certain radio broadcast grabs your attention.`
+			`"Early this week, reports of highly upgraded ships were found all around human space; everything from warships to shuttles were found, in some cases, to possess supernatural strength," The radio chatters, "So far, no ship manufacturers are willing to explain the sudden, drastic increase in quality. Civilians are advised to watch their scanners closely; pirate vessels with such superior upgrades have been spotted."`
+			`Maribelle blinks, "You think there are other ships like the Apoxys out there, captain?" She asks, before shaking her head, "At the very least, we'd best be careful. Sounds like danger..."`
+			`You nod in agreement, wondering just what sort of ships might be affected by this supposed "sudden quality increase".`
+			
+event "Level 20 Fleet Deployment"
+	fleet "Large Northern Merchants"
+		add variant 5
+			"Star Queen"
+			"Level 20 Leviathan"
+		add variant 50
+			"Level 20 Behemoth"
+		add variant 10
+			"Level 20 Behemoth" 2
+		add variant 10
+			"Level 20 Behemoth"
+			"Berserker (Strike)" 3
+	fleet "Large Northern Pirates"
+		add variant 6
+			"Level 20 Leviathan"
+			"Firebird"
+		add variant 4
+			"Level 20 Leviathan"
+			"Firebird (Missile)"
+		add variant 4
+			"Level 20 Leviathan"
+			"Firebird (Plasma)"
+		add variant 4
+			"Level 20 Leviathan"
+			"Firebird (Laser)"
+		add variant 9
+			"Level 20 Leviathan"
