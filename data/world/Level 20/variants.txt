@@ -2,6 +2,7 @@ shipyard "human plugins"
 	"Level 20 Leviathan"
 	"Level 20 Behemoth"
 	"Level 20 Protector"
+	"Level 20 Vanguard"
 
 ship "Leviathan" "Level 20 Leviathan"
 	add attributes
@@ -129,3 +130,73 @@ ship "Protector" "Level 20 Protector"
 	turret 48.5 48.5
 	turret 48.5 48.5
 	turret 0 30 "Sanctuary Beam"
+	
+ship "Vanguard" "Level 20 Vanguard"
+	add attributes
+		"cost" 6500000
+		"shields" 11000
+		"hull" 6200
+		"required crew" 14
+		"bunks" 14
+		"heat dissipation" .3
+		"cargo space" 10
+		"outfit space" 585
+		"weapon capacity" 400
+		"engine capacity" 80
+	outfits
+		"Proton Gun" 7
+		"Plasma Cannon" 7
+		"Particle Cannon" 7
+		"Armageddon Core"
+		"Fusion Reactor"
+		"LP036a Battery Pack"
+		"S-970 Regenerator"
+		"Liquid Helium Cooler" 2
+		"A860 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Hyperdrive"
+	engine -16.5 131
+	engine 16.5 131
+	gun 0 -132.5 "Proton Gun"
+		parallel
+	gun 0 -132.5 "Plasma Cannon"
+		parallel
+	gun 0 -132.5 "Particle Cannon"
+		parallel
+	gun -24 -122.5 "Proton Gun"
+		parallel
+	gun -24 -122.5 "Plasma Cannon"
+		parallel
+	gun -24 -122.5 "Particle Cannon"
+		parallel
+	gun 24 -122.5 "Proton Gun"
+		parallel
+	gun 24 -122.5 "Plasma Cannon"
+		parallel
+	gun 24 -122.5 "Particle Cannon"
+		parallel
+	gun -40 -47.5 "Proton Gun"
+		parallel
+	gun -40 -47.5 "Plasma Cannon"
+		parallel
+	gun -40 -47.5 "Particle Cannon"
+		parallel
+	gun 40 -47.5 "Proton Gun"
+		parallel
+	gun 40 -47.5 "Plasma Cannon"
+		parallel
+	gun 40 -47.5 "Particle Cannon"
+		parallel
+	gun -35 -44.5 "Proton Gun"
+		parallel
+	gun -35 -44.5 "Plasma Cannon"
+		parallel
+	gun -35 -44.5 "Particle Cannon"
+		parallel
+	gun 35 -44.5 "Proton Gun"
+		parallel
+	gun 35 -44.5 "Plasma Cannon"
+		parallel
+	gun 35 -44.5 "Particle Cannon"
+		parallel
+	turret 0 42
