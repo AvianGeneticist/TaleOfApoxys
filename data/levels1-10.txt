@@ -188,7 +188,6 @@ mission "Apoxys Level 1"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Level 1" "Reached level 1!"
 		conversation
 			`Maribelle (the Apoxys' AI) seems very content as you come in for landing. "Captain!" She exclaims excitedly, "I know we've only just begun, but I think I'm already beginning to understand the galaxy. If you don't mind, I'd like to make some adjustments while we're parked today."`
 			`You notice a number of prompts before you. You could likely give Maribelle some feedback into what exactly you'd like to improve. You begin to say, "In addition to your own desired improvements..."`
@@ -255,6 +254,7 @@ mission "Apoxys Level 1"
 	
 	on decline
 		outfit "Low Basal Level" 1
+		log Levels "Level 1" "Reached level 1!"
 		set "apoxys lv.1"
 		
 mission "Apoxys Level 2"
@@ -270,7 +270,6 @@ mission "Apoxys Level 2"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Level 2" "Reached level 2!"
 		conversation
 			`"Well, captain," Maribelle says contently as you dock, "It feels like it's hardly been a moment since we first met, but I already know so much more about the galaxy than I did those short days ago. I'd like to try making some more improvements; did you have any ideas you wanted to share?"`
 			`The prompts appear before you yet again, and you prepare to deliver your own advice.`
@@ -337,6 +336,7 @@ mission "Apoxys Level 2"
 	
 	on decline
 		outfit "Low Basal Level" 1
+		log Levels "Level 2" "Reached level 2!"
 		set "apoxys lv.2"
 		
 mission "Apoxys Level 3"
@@ -352,7 +352,6 @@ mission "Apoxys Level 3"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Level 3" "Reached level 3!"
 		conversation
 			`Maribelle's virtual self smiles at you as you land, "Mind taking a brief sabbatical, captain? Something about these past few experiences have felt especially impactful; I'd like to really think over my upgrades this time."`
 			`"I'd be happy to help you pick out some upgrades," You offer.`
@@ -462,6 +461,7 @@ mission "Apoxys Level 3"
 	
 	on decline
 		outfit "Low Basal Level" 1
+		log Levels "Level 3" "Reached level 3!"
 		set "apoxys lv.3"
 		
 mission "Apoxys Level 4"
@@ -477,7 +477,6 @@ mission "Apoxys Level 4"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Level 4" "Reached level 4!"
 		conversation
 			`"I'll tell you what captain, after those special upgrades, I felt fit as a fiddle!" Maribelle expresses joyously, "With your oversight, I think I could become a true force for good in this galaxy."`
 			`You can't help but smile a bit and nod, "Well, you've been growing at a remarkable rate," You compliment, wondering if such a compliment even means anything to an AI.`
@@ -545,6 +544,7 @@ mission "Apoxys Level 4"
 	
 	on decline
 		outfit "Low Basal Level" 1
+		log Levels "Level 4" "Reached level 4!"
 		set "apoxys lv.4"
 		
 mission "Apoxys Level 5"
@@ -560,7 +560,6 @@ mission "Apoxys Level 5"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Level 5" "Reached level 5!"
 		conversation
 			`"Ready to give some more input, captain?" Maribelle asks, "You've been treating me real right as of late, and I want to provide you the same courtesy!"`
 			`You nod, taking a moment to think about what you'd like to see focused on.`
@@ -627,6 +626,7 @@ mission "Apoxys Level 5"
 	
 	on decline
 		outfit "Low Basal Level" 1
+		log Levels "Level 5" "Reached level 5!"
 		set "apoxys lv.5"
 		
 mission "Apoxys Level 6"
@@ -642,7 +642,6 @@ mission "Apoxys Level 6"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Level 6" "Reached level 6!"
 		conversation
 			`Maribelle seems to be lost in thought as you land. "Is something wrong?" You ask. "Oh, nothing, captain. I've just been thinking about what changes we could make next," Maribelle explains. You nod, and join her in thinking about potential ship improvements.`
 			choice
@@ -750,6 +749,7 @@ mission "Apoxys Level 6"
 	
 	on decline
 		outfit "Low Basal Level" 1
+		log Levels "Level 6" "Reached level 6!"
 		set "apoxys lv.6"
 
 mission "Apoxys Level 7"
@@ -765,7 +765,6 @@ mission "Apoxys Level 7"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Level 7" "Reached level 7!"
 		conversation
 			`"I'm feeling particularly exciteable today, captain! We should try and capitalize on that fact, you know? Help me think of something!" Maribelle demands, giggling cheerfully.`
 			`You just chuckle and shake your head, thinking back to what might be improved after your last experiences...`
@@ -832,6 +831,7 @@ mission "Apoxys Level 7"
 	
 	on decline
 		outfit "Low Basal Level" 1
+		log Levels "Level 7" "Reached level 7!"
 		set "apoxys lv.7"
 		
 mission "Apoxys Level 8"
@@ -847,7 +847,6 @@ mission "Apoxys Level 8"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Level 8" "Reached level 8!"
 		conversation
 			`"I'm feeling particularly exciteable today, captain! We should try and capitalize on that fact, you know? Help me think of something!" Maribelle demands, giggling cheerfully.`
 			`You just chuckle and shake your head, thinking back to what might be improved after your last experiences...`
@@ -914,6 +913,7 @@ mission "Apoxys Level 8"
 	
 	on decline
 		outfit "Low Basal Level" 1
+		log Levels "Level 8" "Reached level 8!"
 		set "apoxys lv.8"
 		
 mission "Apoxys Level 9"
@@ -929,7 +929,6 @@ mission "Apoxys Level 9"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Level 9" "Reached level 9!"
 		conversation
 			`Maribelle seems to be lost in thought as you land. "Is something wrong?" You ask. "Oh, nothing, captain. I've just been thinking about what changes we could make next," Maribelle explains. You nod, and join her in thinking about potential ship improvements.`
 			choice
@@ -1037,6 +1036,7 @@ mission "Apoxys Level 9"
 	
 	on decline
 		outfit "Low Basal Level" 1
+		log Levels "Level 9" "Reached level 9!"
 		set "apoxys lv.9"
 		
 mission "Apoxys Level 10"
@@ -1052,7 +1052,6 @@ mission "Apoxys Level 10"
 	
 	on offer
 		require "Apoxys Core"
-		log Levels "Milestone Level 10" "Achieved the milestone of level 10!"
 		conversation
 			`Maribelle seems oddly solemn today. You look over her briefly, then ask her what's wrong. "Nothing, Captain! I just feel such power... Such a sense of energy! I feel like I could do all sorts of things! Give me a day alone with the ship, I'd like to surprise you," Maribelle explains.`
 			`You nod calmly, and turn to leave. You're stopped briefly, however, making sure you write down your recommendation as to which ship system needs the most love. You've done this nine times before, no need to stop now.`
@@ -1119,4 +1118,5 @@ mission "Apoxys Level 10"
 	
 	on decline
 		outfit "Level 10 Milestone" 1
+		log Levels "Milestone Level 10" "Achieved the milestone of level 10!"
 		set "apoxys lv.10"
