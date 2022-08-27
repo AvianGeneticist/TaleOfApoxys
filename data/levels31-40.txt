@@ -182,7 +182,6 @@ mission "Apoxys Level 31"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Level 31" "Reached level 31!"
 		conversation
 			`"Bigger and better again, cap'n!" Maribelle says contently, "When you're ready, I'll take your feedback and put it to good use!" She says gleefully, smiling at you.`
 			choice
@@ -249,6 +248,7 @@ mission "Apoxys Level 31"
 	
 	on decline
 		outfit "High Basal Level" 1
+		log "Levels (4)" "Level 31" "Reached level 31!"
 		set "apoxys lv.31"
 		
 mission "Apoxys Level 32"
@@ -264,7 +264,6 @@ mission "Apoxys Level 32"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Level 32" "Reached level 32!"
 		conversation
 			`"Ready to give some more input, captain?" Maribelle asks, "You've been treating me real right as of late, and I want to provide you the same courtesy!"`
 			`You nod, taking a moment to think about what you'd like to see focused on.`
@@ -331,6 +330,7 @@ mission "Apoxys Level 32"
 	
 	on decline
 		outfit "High Basal Level" 1
+		log "Levels (4)" "Level 32" "Reached level 32!"
 		set "apoxys lv.32"
 		
 mission "Apoxys Level 33"
@@ -346,7 +346,6 @@ mission "Apoxys Level 33"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Level 33" "Reached level 33!"
 		conversation
 			`"We've done a lot together, captain. I'm almost running out of special upgrades to consider," Maribelle thinks aloud, "But, there are always things we can improve, so give me your feedback and we can discuss our next orders of business."`
 			choice
@@ -453,6 +452,7 @@ mission "Apoxys Level 33"
 	
 	on decline
 		outfit "High Basal Level" 1
+		log "Levels (4)" "Level 33" "Reached level 33!"
 		set "apoxys lv.33"
 		
 mission "Apoxys Level 34"
@@ -468,7 +468,6 @@ mission "Apoxys Level 34"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Level 34" "Reached level 34!"
 		conversation
 			`"Another day, another dollar, cap'n," Maribelle declares, "Think I've got another upgrade in me, if you're willing!"`
 			choice
@@ -534,6 +533,7 @@ mission "Apoxys Level 34"
 				
 	on decline
 		outfit "High Basal Level" 1
+		log "Levels (4)" "Level 34" "Reached level 34!"
 		set "apoxys lv.34"
 		
 mission "Apoxys Level 35"
@@ -549,7 +549,6 @@ mission "Apoxys Level 35"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Level 35" "Reached level 35!"
 		conversation
 			`"Ready to give some more input, captain?" Maribelle asks, "You've been treating me real right as of late, and I want to provide you the same courtesy!"`
 			`You nod, taking a moment to think about what you'd like to see focused on.`
@@ -616,6 +615,7 @@ mission "Apoxys Level 35"
 	
 	on decline
 		outfit "High Basal Level" 1
+		log "Levels (4)" "Level 35" "Reached level 35!"
 		set "apoxys lv.35"
 		
 mission "Apoxys Level 36"
@@ -631,7 +631,6 @@ mission "Apoxys Level 36"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Level 36" "Reached level 36!"
 		conversation
 			`"We've got another conundrum, captain," Maribelle says softly, "I have some special ideas for upgrades, and I need someone to break the tie! I voted for both," She admits.`
 			`You nod, taking a moment to think about what you'd like to see focused on before you give the special feedback.`
@@ -753,6 +752,7 @@ mission "Apoxys Level 36"
 	
 	on decline
 		outfit "High Basal Level" 1
+		log "Levels (4)" "Level 36" "Reached level 36!"
 		set "apoxys lv.36"
 
 mission "Apoxys Level 37"
@@ -768,7 +768,6 @@ mission "Apoxys Level 37"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Level 37" "Reached level 37!"
 		conversation
 			`"Always learning, always growing, captain. Someone told me that once, while my persona was still solidifying. I wonder how he's doing now..." Maribelle recalls wistfully, "Hopefully something ambitious! Like maybe deciding what upgrades his ship should get next!" She adds with a sly wink.`
 			choice
@@ -834,6 +833,7 @@ mission "Apoxys Level 37"
 			
 	on decline
 		outfit "High Basal Level" 1
+		log "Levels (4)" "Level 37" "Reached level 37!"
 		set "apoxys lv.37"
 		
 mission "Apoxys Level 38"
@@ -849,7 +849,6 @@ mission "Apoxys Level 38"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Level 38" "Reached level 38!"
 		conversation
 			`"We're still trucking on, captain! You know what that means," She says in a singsong tone, giggling a bit. You just smile and nod, preparing your feedback.`
 			choice
@@ -915,6 +914,7 @@ mission "Apoxys Level 38"
 	
 	on decline
 		outfit "High Basal Level" 1
+		log "Levels (4)" "Level 38" "Reached level 38!"
 		set "apoxys lv.38"
 		
 mission "Apoxys Level 39"
@@ -930,7 +930,6 @@ mission "Apoxys Level 39"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Level 39" "Reached level 39!"
 		conversation
 			`"Hope you've set aside some space to take a break, captain. I've got some special upgrades I want to implement after we decide on things today!" Maribelle expresses.`
 			choice
@@ -1037,6 +1036,7 @@ mission "Apoxys Level 39"
 	
 	on decline
 		outfit "High Basal Level" 1
+		log "Levels (4)" "Level 39" "Reached level 39!"
 		set "apoxys lv.39"
 		
 mission "Apoxys Level 40"
@@ -1052,7 +1052,6 @@ mission "Apoxys Level 40"
 	
 	on offer
 		require "Apoxys Core"
-		log "Levels (4)" "Milestone Level 40" "Achieved the milestone of level 40!"
 		conversation
 			`"Today's gonna	be a big one!" Maribelle declares excitedly, hands clapping together giddily, "I feel like I just reached a big milestone!"`
 			`You smile at her and nod, "That's great!" You reply, "About our upgrades, then..."`
@@ -1119,4 +1118,5 @@ mission "Apoxys Level 40"
 			
 	on decline
 		outfit "Level 40 Milestone" 1
+		log "Levels (4)" "Milestone Level 40" "Achieved the milestone of level 40!"
 		set "apoxys lv.40"
