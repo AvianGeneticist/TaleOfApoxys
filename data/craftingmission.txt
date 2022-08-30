@@ -143,7 +143,7 @@ mission "Crafting Dragonsbreath Battery"
 	job
 	repeat
 	name "Upgrade the Dragonflame Cannon"
-	description "Upgrade the Dragonflame Cannon using 3 Flamethrowers, a Double Plasma Core, and 4 Korath Repeaters."
+	description "Upgrade the Dragonflame Cannon using 3 Flamethrowers, a Double Plasma Core, and 4 Thermal Repeaters."
 	source "New Boston"
 	destination "New Boston"
 	to offer
@@ -151,12 +151,12 @@ mission "Crafting Dragonsbreath Battery"
 	on offer
 		require "Dragonflame Cannon" 1
 		require "Double Plasma Core" 1
-		require "Korath Repeater" 4
+		require "Thermal Repeater" 4
 		require "Flamethrower" 3
 		require "Apoxys Core"
 	on accept
 		outfit "Dragonflame Cannon" -1
-		outfit "Korath Repeater" -4
+		outfit "Thermal Repeater" -4
 		outfit "Double Plasma Core" -1
 		outfit "Flamethrower" -3
 		clear "Forges Operational"
@@ -279,7 +279,7 @@ mission "Crafting Multi-Disruptor"
 	job
 	repeat
 	name "Craft a Multi-Disruptor"
-	description "Use a Korath Detainer, an Ion Cannon, and a Korath Disruptor to craft a Multi-Disruptor."
+	description "Use a Korath Detainer, an Ion Cannon, and a Shield Disruptor Turret to craft a Multi-Disruptor."
 	source "New Boston"
 	destination "New Boston"
 	to offer
@@ -287,12 +287,12 @@ mission "Crafting Multi-Disruptor"
 	on offer
 		require "Korath Detainer" 1
 		require "Ion Cannon" 1
-		require "Korath Disruptor" 1
+		require "Shield Disruptor Turret" 1
 		require "Apoxys Core"
 	on accept
 		outfit "Korath Detainer" -1
 		outfit "Ion Cannon" -1
-		outfit "Korath Disruptor" -1
+		outfit "Shield Disruptor Turret" -1
 		clear "Forges Operational"
 	on complete
 		set "Forges Operational"
@@ -325,17 +325,17 @@ mission "Crafting Interdiction Turret"
 	job
 	repeat
 	name "Craft an Interdiction Turret"
-	description "Use a pair of Korath Grab-Strikes and a pair of Inhibitor Cannons to craft an Interdiction Turret."
+	description "Use a pair of Grab-Strike Turrets and a pair of Inhibitor Cannons to craft an Interdiction Turret."
 	source "New Boston"
 	destination "New Boston"
 	to offer
 		has "Forges Operational"
 	on offer
-		require "Korath Grab-Strike" 2
+		require "Grab-Strike Turret" 2
 		require "Inhibitor Cannon" 2
 		require "Apoxys Core"
 	on accept
-		outfit "Korath Grab-Strike" -2
+		outfit "Grab-Strike Turret" -2
 		outfit "Inhibitor Cannon" -2
 		clear "Forges Operational"
 	on complete
@@ -347,17 +347,17 @@ mission "Crafting Starcutter Turret"
 	job
 	repeat
 	name "Craft a Starcutter Turret"
-	description "Use a Dual Sunbeam Turret and a pair of Korath Slicer Turrets to create a Starcutter Turret."
+	description "Use a Dual Sunbeam Turret and a pair of Husk-Slice Turrets to create a Starcutter Turret."
 	source "New Boston"
 	destination "New Boston"
 	to offer
 		has "Forges Operational"
 	on offer
-		require "Korath Slicer Turret" 2
+		require "Husk-Slice Turret" 2
 		require "Dual Sunbeam Turret" 1
 		require "Apoxys Core"
 	on accept
-		outfit "Korath Slicer Turret" -2
+		outfit "Husk-Slice Turret" -2
 		outfit "Dual Sunbeam Turret" -1
 		clear "Forges Operational"
 	on complete
