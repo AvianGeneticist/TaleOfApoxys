@@ -188,6 +188,164 @@ mission "T2 Experience Cargo [2]"
 		payment
 		"combat rating" += 16
 		dialog phrase "generic cargo delivery payment"
+		
+mission "T3 Experience Cargo [0]"
+	name "(Lv. 7+) Medium delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 70 22 .1
+	to offer
+		"combat rating" > 283
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		"combat rating" += 140
+		dialog phrase "generic cargo delivery payment"
+		
+mission "T3 Experience Cargo [1]"
+	name "(Lv. 7+) Medium delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 63 21 .1
+	to offer
+		"combat rating" > 283
+		"random" > 20
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		"combat rating" += 122
+		dialog phrase "generic cargo delivery payment"
+		
+mission "T3 Experience Cargo [2]"
+	name "(Lv. 7+) Medium delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 77 24 .1
+	to offer
+		"combat rating" > 283
+		"random" > 10
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		"combat rating" += 151
+		dialog phrase "generic cargo delivery payment"
+		
+mission "T4 Experience Cargo [0]"
+	name "(Lv. 13+) Medium delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 145 35 .1
+	to offer
+		"combat rating" > 2749
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		"combat rating" += 315
+		dialog phrase "generic cargo delivery payment"
+		
+mission "T4 Experience Cargo [1]"
+	name "(Lv. 13+) Medium delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 162 36 .1
+	to offer
+		"combat rating" > 2749
+		"random" > 20
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		"combat rating" += 341
+		dialog phrase "generic cargo delivery payment"
+		
+mission "T5 Experience Cargo [0]"
+	name "(Lv. 20+) Large delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 318 51 .1
+	to offer
+		"combat rating" > 11007
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		"combat rating" += 750
+		dialog phrase "generic cargo delivery payment"
+		
+mission "T5 Experience Cargo [1]"
+	name "(Lv. 20+) Large delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 341 56 .1
+	to offer
+		"combat rating" > 11007
+		"random" > 20
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		"combat rating" += 791
+		dialog phrase "generic cargo delivery payment"
 
 # Passenger Missions
 

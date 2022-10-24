@@ -232,7 +232,7 @@ outfit "Rampager Battery"
 		"shield damage" 38
 		"hull damage" 46
 		"hit force" 3
-	description "An odd mix between the weapons that comprise it, the Rampager Battery is comprised of a number of Thrasher Cannons that have been modified and imbued with the seeking effect of the Pug Seeker; so deepy imbued, in fact, that the original Pug Seeker is almost nowhere to be found."
+	description "An odd mix between the weapons that comprise it, the Rampager Battery is comprised of a number of Thrasher Cannons that have been modified and imbued with the seeking effect of the Pug Seeker; so deeply imbued, in fact, that the original Pug Seeker is almost nowhere to be found."
 
 outfit "Proton Undulator Cannon"
 	category "Guns"
@@ -302,6 +302,8 @@ outfit "Proton Undulator Turret"
 		"firing heat" 72
 	description "This is a pair of Proton Undulator Cannons mounted on a turret. Their combined fire rate allows the turret to easily saturate an area with fire, serving wonderfully as a browning weapon."
 
+#Secondaries that use fuel
+
 #Secondaries that require ammo
 	
 outfit "Lightning Striker"
@@ -317,7 +319,7 @@ outfit "Lightning Strike Magazine"
 	cost 72000
 	thumbnail "outfit/emp rack"
 	"mass" 0.8
-	"outfit space" 8
+	"outfit space" -8
 	"lightning striker capacity" 9
 	ammo "Lightning Striker"
 	description "This tiny magazine doesn't store as many lightning strikers as a typical missile storage bay, but it's extremely compact and lightweight."
