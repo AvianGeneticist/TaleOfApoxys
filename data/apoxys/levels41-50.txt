@@ -581,8 +581,6 @@ mission "Apoxys Level 45"
 					goto enginecap
 				`	"You should have some more space for crew and passengers."`
 					goto bunkcap
-				`	(Delay giving Maribelle instructions to upgrade for now.)`
-					defer
 					
 			label shieldcap
 			apply
