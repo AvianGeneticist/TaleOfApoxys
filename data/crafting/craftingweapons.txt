@@ -33,6 +33,26 @@ outfit "Dragonsbreath Battery"
 	description "The Dragonflame Cannon was already the largest, most powerful weapon humanity has ever seen. However, the forges located on New Boston seem to have been designed to power up any weapon, no matter the size. Incorporating Human and Korath tech into the design has resulted in an enormous, three-chambered design: A triple-chambered hand cannon, on a warship scale."
 	description "Even if it wanted to, the entire weapon would not be able to fit in your weapon system; some of it ends up breaching the line and landing squarely in typical outfit space."
 
+outfit "Sanctuary Beam"
+	category "Turrets"
+	cost 2005000
+	thumbnail "outfit/warder"
+	"mass" 76
+	"outfit space" -76
+	"weapon capacity" -76
+	"energy capacity" 75
+	"turret mounts" -1
+	weapon
+		"hardpoint sprite" "hardpoint/warder"
+		"hardpoint offset" 3.
+		"hit effect" "korath warder"
+		"anti-missile" 10
+		"velocity" 350
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 20
+		"firing heat" 14
+	description "This highly-advanced missile defense turret was originally made by the Syndicate by mixing Human and Korath technology. Though it is energy- and space-intensive for an anti-missile, it is capable of continuous fire, burning through even the toughest missiles."
 
 outfit "Starcutter Turret"
 	category "Turrets"
@@ -139,6 +159,48 @@ outfit "Multi-Disruptor"
 	description "Forged from a Korath Detainer, an Ion Cannon, and a Korath Disruptor, the Multi-Disruptor is a fearsome weapon. Combining all of its component weapons into one potent package, the Multi Disruptor can disrupt the Shields, Engines, and Power systems of an enemy ship in a single blast."
 	description "Of course, because it is an amalgam of multiple weapons, it is considerably larger than a more specifically designed weapon."
 
+outfit "Static Cling"
+	category "Guns"
+	cost 4400000
+	thumbnail "outfit/detainer"
+	"mass" 144
+	"outfit space" -173
+	"weapon capacity" -173
+	"energy capacity" 2400
+	"gun ports" -1
+	weapon
+		sprite "projectile/detainer"
+			"frame rate" 2.5
+		sound "detainer"
+		"hit effect" "detainer impact" 3
+		"hit effect" "detainer smoke" 5
+		"fire effect" "finisher sparks" 20
+		"live effect" "detainer sparks" 50
+		"hit effect" "ionball ring" 15
+		"hit effect" "ionball impact"
+		"hit effect" "ionball fragment" 24
+		"live effect" "ionball spark" 140
+		"live effect" "ionball trail" 140
+		"live effect" "ionball twinkle" 560
+		"inaccuracy" .2
+		"velocity" 23
+		"lifetime" 115
+		"reload" 180
+		"burst reload" 30
+		"burst count" 2
+		"firing energy" 1666
+		"firing force" 75
+		"firing heat" 750
+		"hit force" 150
+		"shield damage" 160
+		"hull damage" 240
+		"discharge damage" 50
+		"ion damage" 125
+		"slowing damage" 35
+		"blast radius" 75
+		"no damage scaling"
+	description "The Static Cling fires projectiles that explode into a broad energy field, causing reactor, shield, and engine discharge across all struck targets, as a combination of the Korath Detainer and the Ka'Het Nullifier. Though its effects are significant, its most valuable trait is being able to hit many targets."
+
 outfit "Rampager Battery"
 	category "Guns"
 	cost 2618000
@@ -171,6 +233,74 @@ outfit "Rampager Battery"
 		"hull damage" 46
 		"hit force" 3
 	description "An odd mix between the weapons that comprise it, the Rampager Battery is comprised of a number of Thrasher Cannons that have been modified and imbued with the seeking effect of the Pug Seeker; so deepy imbued, in fact, that the original Pug Seeker is almost nowhere to be found."
+
+outfit "Proton Undulator Cannon"
+	category "Guns"
+	cost 502500
+	thumbnail "outfit/ka'het annihilator"
+	"mass" 38
+	"outfit space" -42
+	"weapon capacity" -42
+	"gun ports" -1
+	weapon
+		sprite "projectile/annihilator"
+			"frame rate" 7
+		sound "inhibitor"
+		"hit effect" "bullet impact"
+		"submunition" "Undulator Propagate" 3
+		"inaccuracy" 0.8
+		"velocity" 23
+		"lifetime" 23
+		"reload" 8
+		"firing energy" 48
+		"firing heat" 72
+	description "A mix of the Proton Gun and the Ka'Het Ravager, this weapon produces long-ranged projectiles that break apart over long distance, reducing the likelihood that all the projectile's energy will land on target, but massively increasing the amount of area the weapon can control."
+
+outfit "Undulator Propagate"
+	weapon
+		sprite "projectile/annihilator"
+			"frame rate" 6
+		"hit effect" "proton impact"
+		"submunition" "Undulator Trail" 4
+		"random velocity" 2
+		"inaccuracy" 3
+		"lifetime" 23
+		
+outfit "Undulator Trail"
+	weapon
+		sprite "projectile/annihilator"
+			"frame rate" 5
+		"hit effect" "proton impact"
+		"random velocity" 2
+		"inaccuracy" 5
+		"random lifetime" 6
+		"lifetime" 23
+		"hit force" 1
+		"shield damage" 6.4
+		"hull damage" 3.6
+		
+outfit "Proton Undulator Turret"
+	category "Turrets"
+	cost 835000
+	thumbnail "outfit/ka'het annihilator turret"
+	"mass" 81
+	"outfit space" -88
+	"weapon capacity" -88
+	"turret mounts" -1
+	weapon
+		sprite "projectile/annihilator"
+			"frame rate" 7
+		sound "inhibitor"
+		"hit effect" "bullet impact"
+		"submunition" "Undulator Propagate" 3
+		"turret turn" 2.1
+		"inaccuracy" 1.2
+		"velocity" 23
+		"lifetime" 23
+		"reload" 4
+		"firing energy" 48
+		"firing heat" 72
+	description "This is a pair of Proton Undulator Cannons mounted on a turret. Their combined fire rate allows the turret to easily saturate an area with fire, serving wonderfully as a browning weapon."
 
 #Secondaries that require ammo
 	

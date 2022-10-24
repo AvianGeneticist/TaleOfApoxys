@@ -299,6 +299,28 @@ mission "Crafting Multi-Disruptor"
 		outfit "Multi-Disruptor" 1
 		dialog `The factory has toiled meticulously, and its toiling has born fruit: A Multi-Disruptor is now yours.`
 		
+mission "Crafting Static Cling"
+	job
+	repeat
+	name "Craft a Static Cling"
+	description "Use a Korath Detainer and a Ka'het Nullifier to craft a Static Cling."
+	source "New Boston"
+	destination "New Boston"
+	to offer
+		has "Forges Operational"
+	on offer
+		require "Korath Detainer" 1
+		require "Ka'het Nullifier" 1
+		require "Apoxys Core"
+	on accept
+		outfit "Korath Detainer" -1
+		outfit "Ka'het Nullifier" -1
+		clear "Forges Operational"
+	on complete
+		set "Forges Operational"
+		outfit "Static Cling" 1
+		dialog `The factory has toiled meticulously, and its toiling has born fruit: A Static Cling is now yours.`
+	
 mission "Crafting Rampager Battery"
 	job
 	repeat
@@ -321,6 +343,50 @@ mission "Crafting Rampager Battery"
 		outfit "Rampager Battery" 1
 		dialog `The factory has toiled meticulously, and its toiling has born fruit: A Rampager Battery is now yours.`
 		
+mission "Crafting Proton Undulator Gun"
+	job
+	repeat
+	name "Craft a Proton Undulator Cannon"
+	description "Use a Proton Gun and a Ka'het Annihilator to craft a Proton Undulator Cannon."
+	source "New Boston"
+	destination "New Boston"
+	to offer
+		has "Forges Operational"
+	on offer
+		require "Proton Gun" 1
+		require "Ka'het Annihilator" 1
+		require "Apoxys Core"
+	on accept
+		outfit "Proton Gun" -1
+		outfit "Ka'het Annihilator" -1
+		clear "Forges Operational"
+	on complete
+		set "Forges Operational"
+		outfit "Proton Undulator Cannon" 1
+		dialog `The factory has toiled meticulously, and its toiling has born fruit: A Proton Undulator Cannon is now yours.`
+		
+mission "Crafting Proton Undulator Turret"
+	job
+	repeat
+	name "Craft a Proton Undulator Turret"
+	description "Use 2 Proton Guns and a Ka'Het Annihilator Turret to craft a Proton Undulator Cannon."
+	source "New Boston"
+	destination "New Boston"
+	to offer
+		has "Forges Operational"
+	on offer
+		require "Proton Gun" 2
+		require "Ka'het Annihilator Turret" 1
+		require "Apoxys Core"
+	on accept
+		outfit "Proton Gun" -2
+		outfit "Ka'het Annihilator Turret" -1
+		clear "Forges Operational"
+	on complete
+		set "Forges Operational"
+		outfit "Proton Undulator Turret" 1
+		dialog `The factory has toiled meticulously, and its toiling has born fruit: A Proton Undulator Turret is now yours.`
+
 mission "Crafting Interdiction Turret"
 	job
 	repeat
