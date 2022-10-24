@@ -33,7 +33,6 @@ outfit "Dragonsbreath Battery"
 	description "The Dragonflame Cannon was already the largest, most powerful weapon humanity has ever seen. However, the forges located on New Boston seem to have been designed to power up any weapon, no matter the size. Incorporating Human and Korath tech into the design has resulted in an enormous, three-chambered design: A triple-chambered hand cannon, on a warship scale."
 	description "Even if it wanted to, the entire weapon would not be able to fit in your weapon system; some of it ends up breaching the line and landing squarely in typical outfit space."
 
-#2 Korath Warders + 1 Heavy Anti-Missile
 outfit "Sanctuary Beam"
 	category "Turrets"
 	cost 2005000
@@ -202,7 +201,6 @@ outfit "Static Cling"
 		"no damage scaling"
 	description "The Static Cling fires projectiles that explode into a broad energy field, causing reactor, shield, and engine discharge across all struck targets, as a combination of the Korath Detainer and the Ka'Het Nullifier. Though its effects are significant, its most valuable trait is being able to hit many targets."
 
-
 outfit "Rampager Battery"
 	category "Guns"
 	cost 2618000
@@ -303,7 +301,6 @@ outfit "Proton Undulator Turret"
 		"firing energy" 48
 		"firing heat" 72
 	description "This is a pair of Proton Undulator Cannons mounted on a turret. Their combined fire rate allows the turret to easily saturate an area with fire, serving wonderfully as a browning weapon."
-
 
 #Secondaries that use fuel
 
