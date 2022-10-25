@@ -1,0 +1,676 @@
+outfit "Low Nova Level"
+	category "Level-Ups"
+	cost 0
+	"mass" 3
+	"outfit space" 40
+	"weapon capacity" 25
+	"engine capacity" 8
+	"unplunderable" 1
+	"hull" 625
+	"shields" 750
+	"operating costs" 25
+	description "Upgrade all the friends!"
+	description "YOU SHOULD NEVER SEE THIS."
+	
+outfit "Low Nova Health"
+	category "Level-Ups"
+	cost 0
+	"mass" 0
+	"outfit space" 0
+	"unplunderable" 1
+	"shields" 3750
+	"hull" 3125
+	description "Improves the Novaxys' durability."
+	description "YOU SHOULD NEVER SEE THIS."
+
+outfit "Low Nova Support"
+	category "Level-Ups"
+	cost 0
+	"mass" 0
+	"outfit space" 105
+	"heat capacity" 15
+	"unplunderable" 1
+	description "Increases the Novaxys' outfit space and heat capacity."
+	description "YOU SHOULD NEVER SEE THIS."
+	
+outfit "Low Nova Combat"
+	category "Level-Ups"
+	cost 0
+	"mass" 0
+	"outfit space" 0
+	"weapon capacity" 50
+	"engine capacity" 12
+	"unplunderable" 1
+	description "Increases the Novaxys' weapon and engine space."
+	description "YOU SHOULD NEVER SEE THIS."
+	
+outfit "N10 Milestone"
+	category "Level-Ups"
+	cost 0
+	"mass" 4
+	"outfit space" 145
+	"weapon capacity" 75
+	"engine capacity" 20
+	"unplunderable" 1
+	"hull" 3750
+	"shields" 4500
+	"operating costs" 25
+	description "Upgrade all the friends!"
+	description "YOU SHOULD NEVER SEE THIS."
+	
+outfit "Level N3 Shield Capacitor"
+	category "Level-Ups"
+	cost 0
+	"mass" -0
+	"outfit space" 0
+	"shield protection" 0.15
+	"shield generation multiplier" 0.1
+	"unplunderable" 1
+	description "Boosts shield durability and recharge rate."
+	description "YOU SHOULD NEVER SEE THIS."
+	
+outfit "Level N3 Hull Plating"
+	category "Level-Ups"
+	cost 0
+	"mass" 0
+	"outfit space" 0
+	"unplunderable" 1
+	"hull protection" 0.15
+	"hull repair multiplier" 0.1
+	description "Boosts hull durability and repair rate."
+	description "YOU SHOULD NEVER SEE THIS."
+	
+outfit "Level N6 Fuel Tank"
+	category "Level-Ups"
+	cost 0
+	"mass" -0
+	"outfit space" 0
+	"fuel capacity" 1000
+	"unplunderable" 1
+	description "A big ol' fuel tank, fit for weaponry and afterburners alike."
+	description "YOU SHOULD NEVER SEE THIS."
+	
+outfit "Level N6 Fuel Refinery"
+	category "Level-Ups"
+	cost 0
+	"mass" 0
+	"outfit space" 0
+	"fuel capacity" 200
+	"fuel generation" 0.1
+	"energy consumption" 1.5
+	"heat generation" 5
+	"unplunderable" 1
+	description "A more subdued fuel tank and a bit of powered fuel generation."
+	description "YOU SHOULD NEVER SEE THIS."
+	
+outfit "Level N9 Cargo Expansion"
+	category "Level-Ups"
+	cost 0
+	"mass" -0
+	"outfit space" 0
+	"cargo space" 135
+	"unplunderable" 1
+	description "It's not often you get to put cargo on the Novaxys."
+	description "YOU SHOULD NEVER SEE THIS."
+	
+outfit "Level N9 Passenger Expansion"
+	category "Level-Ups"
+	cost 0
+	"mass" -0
+	"outfit space" 0
+	"bunks" 35
+	"unplunderable" 1
+	description "A fair sized bunk expansion on a ship that otherwise gets no opportunities to expand its bunks."
+	description "YOU SHOULD NEVER SEE THIS."
+
+
+mission "Novaxys Level 1"
+	landing
+	name "Novaxys Level 1"
+	description "The Novaxys Reached level 1!"
+	to offer
+		not "novaxys lv.1"
+		"combat rating" > 68193
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "Low Nova Level" 1
+		log "Levels (Novaxys)" "Level 1" "Reached level 1!"
+		conversation
+			`You step into the Novaxys, looking over Rosalynd quietly. Rosalynd returns your glance, blinking once or twice, "I feel weird, captain," She admits, "It's like my whole body is too big for its own skin," She expresses.`
+			`You nod softly, explaining how the Apoxys would grow every so often, particularly after long battles or the like. Rosalynd perks up, "Oh! Maybe I could do that, too?" She supposes, "Well, in that case, what should I do, captain?" She asks, tilting her head slightly.`
+			`Compared to Maribelle, Rosalynd both has a smaller hull and less experience to work with. You consider some dumbed-down answers to make the choice easier for her.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 1" "Chose durability upgrade."
+			`"Oh, so I should try and be sturdier?" She supposes, "Okay! I'll give it a try."`
+				decline
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 1" "Chose support upgrade."
+			`"Oh, that makes sense," She replies, "Being able to run bigger and better things would be good."`
+				decline
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 1" "Chose combat upgrade."
+			`"My battle abilities? Like moving and shooting? I can try that!" She expresses.`
+				decline
+	
+	on decline
+		set "novaxys lv.1"
+
+mission "Novaxys Level 2"
+	landing
+	name "Novaxys Level 2"
+	description "The Novaxys Reached level 2!"
+	to offer
+		has "novaxys lv.1"
+		not "novaxys lv.2"
+		"combat rating" > 88729
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "Low Nova Level" 1
+		log "Levels (Novaxys)" "Level 2" "Reached level 2!"
+		conversation
+			`When you step into the Novaxys this time, Rosalynd seems giddy. Relieved that the "growth" process went through as planned, you approach her. "I think I'm rady to grow again, captain!" She says excitedly, "But, if you wouldn't mind, I'd like your direction, still," She expresses.`
+			`You smile and nod, preparing to deliver some feedback.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 2" "Chose durability upgrade."
+			`"More durability? I'll do my best!" She expresses.`
+				decline
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 2" "Chose support upgrade."
+			`"Right, right... We could use some more space around here," She supposes, hand under her chin.`
+				decline
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 2" "Chose combat upgrade."
+			`"It would suit me to do better in combat, wouldn't it?" She asks, tilting her head a little.`
+				decline
+	
+	on decline
+		set "novaxys lv.2"
+
+mission "Novaxys Level 3"
+	landing
+	name "Novaxys Level 3"
+	description "The Novaxys Reached level 3!"
+	to offer
+		has "novaxys lv.2"
+		not "novaxys lv.3"
+		"combat rating" > 109999
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "Low Nova Level" 1
+		log "Levels (Novaxys)" "Level 3" "Reached level 3!"
+		conversation
+			`Rosalynd looks at you, hands folded neatly, "So mom was telling me about how every few growths, you and her would do something special," She explains, "And, I wanna try that, too! So... I was thinking somekind of shield or hull upgrade, to keep me safe if I ever wander off too far."`
+			`You nod a bit, explaining to Rosalynd that typically you handle normal upgrades first. She nods, and you prepare some standard feedback for her.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 3" "Chose durability upgrade."
+			`"Okay!" She replies, "Now, what should I do to keep myself safe?" She asks, tilting her head a bit.`
+			choice
+				`	"Make sure your shields stay up and running."`
+					goto shieldaugment
+				`	"Make sure your hull is up to scratch in case of the worst."`
+					goto hullbuff
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 3" "Chose support upgrade."
+			`"Okay!" She replies, "Now, what should I do to keep myself safe?" She asks, tilting her head a bit.`
+			choice
+				`	"Make sure your shields stay up and running."`
+					goto shieldaugment
+				`	"Make sure your hull is up to scratch in case of the worst."`
+					goto hullbuff	
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 3" "Chose combat upgrade."
+			`"Okay!" She replies, "Now, what should I do to keep myself safe?" She asks, tilting her head a bit.`
+			choice
+				`	"Make sure your shields stay up and running."`
+					goto shieldaugment
+				`	"Make sure your hull is up to scratch in case of the worst."`
+					goto hullbuff	
+				
+			label shieldaugment
+			apply
+				outfit "Level N3 Shield Capacitor" 1
+				log "Levels (Novaxys)" "Level 3" "Decided on the shield augmentation perk."
+			`"Oh, right! My shields are already my best defense, so I should make them stronger," She nods in agreement.`
+				decline
+			label hullbuff
+			apply
+				outfit "Level N3 Hull Plating" 1
+				log "Levels (Novaxys)" "Level 3" "Decided on the hull improvement perk."
+			`"Well, my hull is my weak spot, so I should be making it better," She supposes, nodding.`
+				decline
+	
+	on decline
+		set "novaxys lv.3"
+
+mission "Novaxys Level 4"
+	landing
+	name "Novaxys Level 4"
+	description "The Novaxys Reached level 4!"
+	to offer
+		has "novaxys lv.3"
+		not "novaxys lv.4"
+		"combat rating" > 132133
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "Low Nova Level" 1
+		log "Levels (Novaxys)" "Level 4" "Reached level 4!"
+		conversation
+			`Rosalynd greets you cheerily as you enter the Novaxys to check up on her. "Hello captain!" She greets, "I was thinking about working on growing again!"`
+			`You nod, wanting to guide her in the right direction.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 4" "Chose durability upgrade."
+			`"Okay! I wouldn't want to get too hurt, after all," She supposes.`
+				decline
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 4" "Chose support upgrade."
+			`"Right, more space is definitely needed in here," She supposes, nodding agreement.`
+				decline
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 4" "Chose combat upgrade."
+			`"Bigger guns and engines to aim them; naturally!" She agrees.`
+				decline
+	
+	on decline
+		set "novaxys lv.4"
+
+mission "Novaxys Level 5"
+	landing
+	name "Novaxys Level 5"
+	description "The Novaxys Reached level 5!"
+	to offer
+		has "novaxys lv.4"
+		not "novaxys lv.5"
+		"combat rating" > 162085
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "Low Nova Level" 1
+		log "Levels (Novaxys)" "Level 5" "Reached level 5!"
+		conversation
+			`Rosalyn smiles at you as you walk in the airlock. "I'm ready to grow again, captain!" She expresses excitedly.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 5" "Chose durability upgrade."
+			`"You do need thick skin to tough it out in space, captain," Rosalynd supposes.`
+				decline
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 5" "Chose support upgrade."
+			`"What else do I need in here? I think I've got most of the essentials..." Rosalynd trails off in though.`
+				decline
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 5" "Chose combat upgrade."
+			`"I'll fight hard for you can mom, you'll see!" She declares, voice loud and proud.`
+				decline
+	
+	on decline
+		set "novaxys lv.5"
+
+mission "Novaxys Level 6"
+	landing
+	name "Novaxys Level 6"
+	description "The Novaxys Reached level 6!"
+	to offer
+		has "novaxys lv.5"
+		not "novaxys lv.6"
+		"combat rating" > 193467
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "Low Nova Level" 1
+		log "Levels (Novaxys)" "Level 6" "Reached level 6!"
+		conversation
+			`"I think I'm ready for some more special upgrades, captain!" Rosalynd expresses, "I was thinking about fuel and stuff; mom has really big fuel tanks, but I don't have any! So, I was wondering if I should go for pure capacity, or if I should try to ensure I always have a source of it," She supposes. "Oh, but, I'm getting ahead of myself. Normal thoughts first, captain?" She asks.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 6" "Chose durability upgrade."
+			`"Okay!" She replies, "So, what about fuel? Any ideas, captain?" She asks.`
+			choice
+				`	"Go for the highest capacity possible, and take fuel from a carrier when needed."`
+					goto bigtanks
+				`	"Ensure you have a refinery on-board so you don't get pinned without fuel."`
+					goto regeneration
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 6" "Chose support upgrade."
+			`"Okay!" She replies, "So, what about fuel? Any ideas, captain?" She asks.`
+			choice
+				`	"Go for the highest capacity possible, and take fuel from a carrier when needed."`
+					goto bigtanks
+				`	"Ensure you have a refinery on-board so you don't get pinned without fuel."`
+					goto regeneration
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 6" "Chose combat upgrade."
+			`"Okay!" She replies, "So, what about fuel? Any ideas, captain?" She asks.`
+			choice
+				`	"Go for the highest capacity possible, and take fuel from a carrier when needed."`
+					goto bigtanks
+				`	"Ensure you have a refinery on-board so you don't get pinned without fuel."`
+					goto regeneration
+				
+			label bigtanks
+			apply
+				outfit "Level N6 Fuel Tank" 1
+				log "Levels (Novaxys)" "Level 6" "Decided on the shield augmentation perk."
+			`"Oh, of course! It's not like I plan to stray too far from mom," She says, perking up in realization.`
+				decline
+			label regeneration
+			apply
+				outfit "Level N6 Fuel Refinery" 1
+				log "Levels (Novaxys)" "Level 6" "Decided on the hull improvement perk."
+			`"Right," She replies, "You never know what space might hold for us."`
+				decline
+	
+	on decline
+		set "novaxys lv.6"
+
+mission "Novaxys Level 7"
+	landing
+	name "Novaxys Level 7"
+	description "The Novaxys Reached level 7!"
+	to offer
+		has "novaxys lv.6"
+		not "novaxys lv.7"
+		"combat rating" > 225799
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "Low Nova Level" 1
+		log "Levels (Novaxys)" "Level 7" "Reached level 7!"
+		conversation
+			`When you enter the Novaxys, Rosalynd is already excitedly plotting various upgrades for the interior of the ship. You quietly make your way into the pilot's seat, preparing to give some advice.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 7" "Chose durability upgrade."
+			`Rosalynd squeaks in surprise, "Oh! Of course, captain!" She stammers abruptly, "...Couldn't you have at least knocked or something?"`
+				decline
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 7" "Chose support upgrade."
+			`Rosalynd jumps as you abruptly speak, "Oh, yes, more space, obviously! ...Maybe for something to alert me when you come in," She remarks.`
+				decline
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 7" "Chose combat upgrade."
+			`Rosalynd yelps as you speak up, "Captain, goodness! You nearly scared the energy to grow right out of me!" She huffs, looking at you with an annoyed expression. You laugh, and she eventually starts laughing as well.`
+				decline
+	
+	on decline
+		set "novaxys lv.7"
+
+mission "Novaxys Level 8"
+	landing
+	name "Novaxys Level 8"
+	description "The Novaxys Reached level 8!"
+	to offer
+		has "novaxys lv.7"
+		not "novaxys lv.8"
+		"combat rating" > 259025
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "Low Nova Level" 1
+		log "Levels (Novaxys)" "Level 8" "Reached level 8!"
+		conversation
+			`Rosalynd smirks at you as you walk into the Novaxys. "You're not scaring me this time!" She declares, giggling, "What should we improve now, captain?" She asks in a less hyper tone.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 8" "Chose durability upgrade."
+			`"Aww, are you worried about me, captain?" Rosalynd asks, "Well, I appreciate it!"`
+				decline
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 8" "Chose support upgrade."
+			`"I think there's plenty of room in here, captain!" Rosalynd giggles, "But, if you insist..."`
+				decline
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 8" "Chose combat upgrade."
+			`"I'll show you combat abilities, captain!" Rosalynd declares, giggling, "Well, not really. But I want to get stronger for you and mom, no doubt!"`
+				decline
+	
+	on decline
+		set "novaxys lv.8"
+
+mission "Novaxys Level 9"
+	landing
+	name "Novaxys Level 9"
+	description "The Novaxys Reached level 9!"
+	to offer
+		has "novaxys lv.8"
+		not "novaxys lv.9"
+		"combat rating" > 293995
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "Low Nova Level" 1
+		log "Levels (Novaxys)" "Level 9" "Reached level 9!"
+		conversation
+			`"Alright, I'll put my excitement aside and ask you my special question after your normal feedback," Rosalynd says, her tone making you feel like you'd best not keep her waiting.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 9" "Chose durability upgrade."
+			`"Alright, so, the important stuff," Rosalynd says with a small smile, "I wanna be more like mom, and she has lots of space for things and people inside of her hull, so I wanna do things like that! What should I do; get space for items, or more beds for people?" She asks, tilting her head.`
+			choice
+				`	"Cargo capacity for mined items or trade goods would be best."`
+					goto cargo
+				`	"Extra bunk space for weapon operators or crew would serve you best."`
+					goto people
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 9" "Chose support upgrade."
+			`"Alright, so, the important stuff," Rosalynd says with a small smile, "I wanna be more like mom, and she has lots of space for things and people inside of her hull, so I wanna do things like that! What should I do; get space for items, or more beds for people?" She asks, tilting her head.`
+			choice
+				`	"Cargo capacity for mined items or trade goods would be best."`
+					goto cargo
+				`	"Extra bunk space for weapon operators or crew would serve you best."`
+					goto people
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 9" "Chose combat upgrade."
+			`"Alright, so, the important stuff," Rosalynd says with a small smile, "I wanna be more like mom, and she has lots of space for things and people inside of her hull, so I wanna do things like that! What should I do; get space for items, or more beds for people?" She asks, tilting her head.`
+			choice
+				`	"Cargo capacity for mined items or trade goods would be best."`
+					goto cargo
+				`	"Extra bunk space for weapon operators or crew would serve you best."`
+					goto people
+				
+			label cargo
+			apply
+				outfit "Level N9 Cargo Expansion" 1
+				log "Levels (Novaxys)" "Level 9" "Decided on the cargo expansion perk."
+			`"Okay! Man, I wonder what it'll be like to have a real, natural cargo hold..." She says wistfully.`
+				decline
+			label people
+			apply
+				outfit "Level N9 Passenger Expansion" 1
+				log "Levels (Novaxys)" "Level 9" "Decided on the bunk expansion perk."
+			`"Right," She replies, "You never know what space might hold for us."`
+				decline
+	
+	on decline
+		set "novaxys lv.9"
+
+mission "Novaxys Level 10"
+	landing
+	name "Novaxys Level 10"
+	description "The Novaxys Reached level 10!"
+	to offer
+		has "novaxys lv.9"
+		not "novaxys lv.10"
+		"combat rating" > 311529
+	on fail
+		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		require "Novaxys Core"
+		outfit "N10 Milestone" 1
+		log "Levels (Novaxys)" "Level 10" "Reached the milestone level of 10!"
+		conversation
+			`Rosalynd looks concerned as you walk into the cockpit. "What's wrong?" You ask.`
+			`"It's... It's all this energy, captain. I feel like I could explode," She expresses. You remember when Maribelle went through a similar experience for the first time. You get Rosalynd's attention, beginning to explain to the nervous AI what exactly she's feeling, to the best of your ability.`
+			`She seems much calmer after the explanation. "Oh, thank you, captain," She says, sighing softly in relief, "Well... What else should I focus on, when I grow like this?" She asks.`
+			choice
+				`	"You should improve your durability."`
+					goto healthcap
+				`	"You should expand your capacity for support outfits."`
+					goto supportcap
+				`	"You should enhance your battle abilities."`
+					goto battlecap
+					
+			label healthcap
+			apply
+				outfit "Low Nova Health" 1
+				log "Levels (Novaxys)" "Level 10" "Chose durability upgrade."
+			`You reassure Rosalynd one more time that this isn't a bad situation for her, and leave the ship to allow her to do her thing.`
+				decline
+			label supportcap
+			apply
+				outfit "Low Nova Support" 1
+				log "Levels (Novaxys)" "Level 10" "Chose support upgrade."
+			`You reassure Rosalynd one more time that this isn't a bad situation for her, and leave the ship to allow her to do her thing.`
+				decline
+			label battlecap
+			apply
+				outfit "Low Nova Combat" 1
+				log "Levels (Novaxys)" "Level 10" "Chose combat upgrade."
+			`You reassure Rosalynd one more time that this isn't a bad situation for her, and leave the ship to allow her to do her thing.`
+				decline
+	
+	on decline
+		set "novaxys lv.10"
