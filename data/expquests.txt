@@ -462,7 +462,7 @@ mission "T2 Experience Passengers [1]"
 		dialog "You wish the mining family the best of luck on <planet>, and collect your payment of <payment>."
 
 mission "T2 Experience Passengers [2]"
-	name "(Lv. 3+) Transport miners to <planet>"
+	name "(Lv. 3+) Transport farmers to <planet>"
 	job
 	repeat
 	description "This family of <bunks> farmers is hoping to find work on <destination>, and they will pay you <payment> to take them there."
@@ -485,7 +485,7 @@ mission "T2 Experience Passengers [2]"
 		dialog "You wish the farm family the best of luck on <planet>, and collect your payment of <payment>."
 		
 mission "T2 Experience Passengers [3]"
-	name "(Lv. 3+) Transport miners to <planet>"
+	name "(Lv. 3+) Transport farmers to <planet>"
 	job
 	repeat
 	description "This family of <bunks> farmers is hoping to find work on <destination>, and they will pay you <payment> to take them there."
@@ -506,4 +506,4 @@ mission "T2 Experience Passengers [3]"
 		payment 2000
 		"combat rating" += 17
 		dialog "You wish the farm family the best of luck on <planet>, and collect your payment of <payment>."
-		
+
