@@ -614,7 +614,7 @@ mission "T3 Experience Passengers [3]"
 
 
 mission "T4 Experience Passengers [0]"
-	name "(Lvl 13+) Colonists to <planet>"
+	name "(Lv. 13+) Colonists to <planet>"
 	job
 	repeat
 	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
@@ -640,7 +640,7 @@ mission "T4 Experience Passengers [0]"
 
 
 mission "T4 Experience Passengers [1]"
-	name "(Lvl 13+) Colonists to <planet>"
+	name "(Lv. 13+) Colonists to <planet>"
 	job
 	repeat
 	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
@@ -667,7 +667,7 @@ mission "T4 Experience Passengers [1]"
 
 
 mission "T4 Experience Passengers [2]"
-	name "(Lvl 13+) Stranded field trip to <planet>"
+	name "(Lv. 13+) Stranded field trip to <planet>"
 	job
 	repeat
 	description `These <bunks> pupils have been stranded on a field trip due to the unexpected bankruptcy of their booked transport. A reward of <payment> is available for them and their <tons> of luggage to be returned home to <destination>.`
@@ -696,7 +696,7 @@ mission "T4 Experience Passengers [2]"
 
 
 mission "T5 Experience Passengers [0]"
-	name "(Lvl 20+) Colonists to <planet>"
+	name "(Lv. 20+) Colonists to <planet>"
 	job
 	repeat
 	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
@@ -722,7 +722,7 @@ mission "T5 Experience Passengers [0]"
 
 
 mission "T5 Experience Passengers [1]"
-	name "(Lvl 20+) Colonists to <planet>"
+	name "(Lv. 20+) Colonists to <planet>"
 	job
 	repeat
 	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
@@ -749,7 +749,7 @@ mission "T5 Experience Passengers [1]"
 
 
 mission "T5 Experience Passengers [2]"
-	name "(Lvl 20+) Stranded field trip to <planet>"
+	name "(Lv. 20+) Stranded field trip to <planet>"
 	job
 	repeat
 	description `These <bunks> pupils have been stranded on a field trip due to the unexpected bankruptcy of their booked transport. A reward of <payment> is available for them and their <tons> of luggage to be returned home to <destination>.`
