@@ -415,7 +415,8 @@ mission "Experience Passengers [2]"
 		payment 2000
 		"combat rating" += 4
 		dialog phrase "generic passenger dropoff payment"
-		
+
+
 mission "T2 Experience Passengers [0]"
 	name "(Lv. 3+) Transport miners to <planet>"
 	job
@@ -430,6 +431,8 @@ mission "T2 Experience Passengers [0]"
 		attributes "mining"
 		distance 3 12
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -453,6 +456,8 @@ mission "T2 Experience Passengers [1]"
 		attributes "mining"
 		distance 3 12
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -462,7 +467,7 @@ mission "T2 Experience Passengers [1]"
 		dialog "You wish the mining family the best of luck on <planet>, and collect your payment of <payment>."
 
 mission "T2 Experience Passengers [2]"
-	name "(Lv. 3+) Transport miners to <planet>"
+	name "(Lv. 3+) Transport farmers to <planet>"
 	job
 	repeat
 	description "This family of <bunks> farmers is hoping to find work on <destination>, and they will pay you <payment> to take them there."
@@ -476,6 +481,8 @@ mission "T2 Experience Passengers [2]"
 		attributes "farming"
 		distance 3 12
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -485,7 +492,7 @@ mission "T2 Experience Passengers [2]"
 		dialog "You wish the farm family the best of luck on <planet>, and collect your payment of <payment>."
 		
 mission "T2 Experience Passengers [3]"
-	name "(Lv. 3+) Transport miners to <planet>"
+	name "(Lv. 3+) Transport farmers to <planet>"
 	job
 	repeat
 	description "This family of <bunks> farmers is hoping to find work on <destination>, and they will pay you <payment> to take them there."
@@ -499,6 +506,8 @@ mission "T2 Experience Passengers [3]"
 		attributes "farming"
 		distance 3 12
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -506,4 +515,263 @@ mission "T2 Experience Passengers [3]"
 		payment 2000
 		"combat rating" += 17
 		dialog "You wish the farm family the best of luck on <planet>, and collect your payment of <payment>."
+
+
+mission "T3 Experience Passengers [0]"
+	name "(Lv. 7+) Transport miners to <planet>"
+	job
+	repeat
+	description "This group of <bunks> miners is hoping to find work on <destination>, and they will pay you <payment> to take them there."
+	passengers 4 4 .65
+	to offer
+		"combat rating" > 283
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "mining"
+		distance 3 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		"combat rating" += 101
+		dialog "You wish the miners the best of luck on <planet>, and collect your payment of <payment>."
 		
+mission "T3 Experience Passengers [1]"
+	name "(Lv. 7+) Transport miners to <planet>"
+	job
+	repeat
+	description "This family of <bunks> miners is hoping to find work on <destination>, and they will pay you <payment> to take them there."
+	passengers 4 3 .6
+	to offer
+		"combat rating" > 283
+		"random" > 40
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "mining"
+		distance 3 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		"combat rating" += 112
+		dialog "You wish the miners the best of luck on <planet>, and collect your payment of <payment>."
+
+mission "T3 Experience Passengers [2]"
+	name "(Lv. 7+) Transport farmers to <planet>"
+	job
+	repeat
+	description "This group of <bunks> farmers is hoping to find work on <destination>, and they will pay you <payment> to take them there."
+	passengers 4 4 .6
+	to offer
+		"combat rating" > 283
+		"random" > 15
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "farming"
+		distance 3 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		"combat rating" += 123
+		dialog "You wish the farmers the best of luck on <planet>, and collect your payment of <payment>."
+		
+mission "T3 Experience Passengers [3]"
+	name "(Lv. 7+) Transport farmers to <planet>"
+	job
+	repeat
+	description "This group of <bunks> farmers is hoping to find work on <destination>, and they will pay you <payment> to take them there."
+	passengers 5 3 .5
+	to offer
+		"combat rating" > 283
+		"random" > 50
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "farming"
+		distance 3 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		"combat rating" += 117
+		dialog "You wish the farmers the best of luck on <planet>, and collect your payment of <payment>."
+
+
+mission "T4 Experience Passengers [0]"
+	name "(Lv. 13+) Colonists to <planet>"
+	job
+	repeat
+	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
+	passengers 10 4 .1
+	to offer
+		"combat rating" > 2749
+	source
+		attributes "urban" "near earth" "core" "factory"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "frontier" "dirt belt" "south" "farming" "mining" "rim" "forest"
+		not attributes "station" "urban"
+		distance 2 20
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 50000 90
+		"combat rating" += 252
+		dialog "The colonists hand you <payment> before departing your ship, eager to start their new life on <planet>."
+
+
+mission "T4 Experience Passengers [1]"
+	name "(Lv. 13+) Colonists to <planet>"
+	job
+	repeat
+	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
+	passengers 10 3 .05
+	to offer
+		"combat rating" > 2749
+		random > 50
+	source
+		attributes "urban" "near earth" "core" "factory"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "frontier" "dirt belt" "south" "farming" "mining" "rim" "forest"
+		not attributes "station" "urban"
+		distance 2 20
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 45000 100
+		"combat rating" += 277
+		dialog "The colonists hand you <payment> before departing your ship, eager to start their new life on <planet>."
+
+
+mission "T4 Experience Passengers [2]"
+	name "(Lv. 13+) Stranded field trip to <planet>"
+	job
+	repeat
+	description `These <bunks> pupils have been stranded on a field trip due to the unexpected bankruptcy of their booked transport. A reward of <payment> is available for them and their <tons> of luggage to be returned home to <destination>.`
+	passengers 20 4 .1
+	cargo "educational supplies" 2 10 .6
+	to offer
+		"combat rating" > 2749
+		random < ( "passenger space" - 30 ) / 2
+		random < 10
+	source
+		attributes "near earth" "deep" "paradise" "tourism"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "near earth" "deep" "paradise" "urban"
+		not attributes "station" "urban"
+		distance 4 16
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 90000 120
+		"combat rating" += 281
+		dialog `The students excitedly rush off your ship into the arms of their waiting parents. The adventure was fun, but they're very pleased to be safely home after so long. The school deposits <payment> into your account.`
+
+
+mission "T5 Experience Passengers [0]"
+	name "(Lv. 20+) Colonists to <planet>"
+	job
+	repeat
+	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
+	passengers 12 5 .08
+	to offer
+		"combat rating" > 11007
+	source
+		attributes "urban" "near earth" "core" "factory"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "frontier" "dirt belt" "south" "farming" "mining" "rim" "forest"
+		not attributes "station" "urban"
+		distance 2 25
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 50000 90
+		"combat rating" += 612
+		dialog "The colonists hand you <payment> before departing your ship, eager to start their new life on <planet>."
+
+
+mission "T5 Experience Passengers [1]"
+	name "(Lv. 20+) Colonists to <planet>"
+	job
+	repeat
+	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
+	passengers 11 4 .035
+	to offer
+		"combat rating" > 11007
+		random > 50
+	source
+		attributes "urban" "near earth" "core" "factory"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "frontier" "dirt belt" "south" "farming" "mining" "rim" "forest"
+		not attributes "station" "urban"
+		distance 2 25
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 45000 100
+		"combat rating" += 627
+		dialog "The colonists hand you <payment> before departing your ship, eager to start their new life on <planet>."
+
+
+mission "T5 Experience Passengers [2]"
+	name "(Lv. 20+) Stranded field trip to <planet>"
+	job
+	repeat
+	description `These <bunks> pupils have been stranded on a field trip due to the unexpected bankruptcy of their booked transport. A reward of <payment> is available for them and their <tons> of luggage to be returned home to <destination>.`
+	passengers 23 5 .09
+	cargo "educational supplies" 4 11 .5
+	to offer
+		"combat rating" > 11007
+		random < ( "passenger space" - 30 ) / 2
+		random < 10
+	source
+		attributes "near earth" "deep" "paradise" "tourism"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		attributes "near earth" "deep" "paradise" "urban"
+		not attributes "station" "urban"
+		distance 4 25
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on offer
+		require "Apoxys Core"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 90000 120
+		"combat rating" += 644
+		dialog `The students excitedly rush off your ship into the arms of their waiting parents. The adventure was fun, but they're very pleased to be safely home after so long. The school deposits <payment> into your account.`
