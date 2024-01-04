@@ -108,7 +108,9 @@ mission "Apoxys Remnant Organs Lv. 20"
 		outfit "Remnant Ship Organs" -1
 		outfit "Remnant Ship Organs (Lv. 20)" 1
 		dialog `With the large growth bestowed by the milestone, the ship 'organs' from the remnant seem to have taken an opportunity to grow as well.`
-		
+		decline
+
+
 mission "Apoxys Remnant Organs Lv. 30"
 	landing
 	name "Lv. 30 organ upgrade"
@@ -122,7 +124,8 @@ mission "Apoxys Remnant Organs Lv. 30"
 		outfit "Remnant Ship Organs (Lv. 20)" -1
 		outfit "Remnant Ship Organs (Lv. 30)" 1
 		dialog `With the large growth bestowed by the milestone, the ship 'organs' from the remnant seem to have taken an opportunity to grow further.`
-		
+		decline
+
 mission "Apoxys Remnant Organs Lv. 40"
 	landing
 	name "Lv. 40 organ upgrade"
@@ -136,3 +139,4 @@ mission "Apoxys Remnant Organs Lv. 40"
 		outfit "Remnant Ship Organs (Lv. 30)" -1
 		outfit "Remnant Ship Organs (Lv. 40)" 1
 		dialog `With the large growth bestowed by the milestone, the ship 'organs' from the remnant seem to have taken an opportunity to grow even more.`
+		decline
